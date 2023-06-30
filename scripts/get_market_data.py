@@ -23,9 +23,9 @@ def get_technical_indicators(df: pd.DataFrame) -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-    tickers = ['^NSEI', '^GSPC', 'CL=F', 'HSI', 'SHA', '^STI', '^BSESN', 'TATAMOTORS.NS', 'SBIN.NS', 'IOC.NS', 'RAJESHEXPO.NS']
+    tickers = ['^NSEI', '^GSPC', 'CL=F', 'HSI', 'SHA', '^STI', '^BSESN', 'TATAMOTORS.NS', 'SBIN.NS', 'IOC.NS',
+               'RAJESHEXPO.NS', 'INR=X']
     download_market_data(tickers)
-
 
 
 
