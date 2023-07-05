@@ -34,9 +34,11 @@ def data_preprocessing(df: pd.DataFrame) -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-    tickers = ['^NSEI', '^GSPC', 'CL=F', 'HSI', 'SHA', '^STI', '^BSESN', 'TATAMOTORS.NS', 'SBIN.NS', 'IOC.NS',
-               'RAJESHEXPO.NS'] #'INR=X'
-    download_market_data(tickers)
+    index_tickers = ['^NSEI', '^GSPC', 'CL=F', 'HSI', 'SHA', '^STI', '^BSESN', 'TATAMOTORS.NS', 'SBIN.NS', 'IOC.NS',
+               'RAJESHEXPO.NS', 'INR=X']
+    stock_tickers = ['TTML.NS', 'CHOLAFIN.NS', 'KSB3.DE', 'ZENSARTECH.NS', 'OFSS.NS', 'LXCHEM.NS', 'VMART.NS', 'DLF.NS',
+               'IPCALAB.NS', 'ZFCVINDIA.NS']
+    download_market_data(index_tickers)
 
 
 
