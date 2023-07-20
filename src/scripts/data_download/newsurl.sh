@@ -1,0 +1,18 @@
+#!/bash
+echo "hi"
+python newsurl.py '2008-1-1' '2008-12-31' '../../datasets/newsurl/newsurl_2008.jl'
+python newsurl.py '2009-1-1' '2009-12-31' '../../datasets/newsurl/newsurl_2009.jl'
+python newsurl.py '2010-1-1' '2010-12-31' '../../datasets/newsurl/newsurl_2010.jl'
+python newsurl.py '2011-1-1' '2011-12-31' '../../datasets/newsurl/newsurl_2011.jl'
+python newsurl.py '2012-1-1' '2012-12-31' '../../datasets/newsurl/newsurl_2012.jl'
+python newsurl.py '2013-1-1' '2013-12-31' '../../datasets/newsurl/newsurl_2013.jl'
+python newsurl.py '2014-1-1' '2014-12-31' '../../datasets/newsurl/newsurl_2014.jl'
+python newsurl.py '2015-1-1' '2015-12-31' '../../datasets/newsurl/newsurl_2015.jl'
+python newsurl.py '2016-1-1' '2016-12-31' '../../datasets/newsurl/newsurl_2016.jl'
+python newsurl.py '2017-1-1' '2017-12-31' '../../datasets/newsurl/newsurl_2017.jl'
+python newsurl.py '2018-1-1' '2018-12-31' '../../datasets/newsurl/newsurl_2018.jl'
+python newsurl.py '2019-1-1' '2019-12-31' '../../datasets/newsurl/newsurl_2019.jl'
+python newsurl.py '2020-1-1' '2020-12-31' '../../datasets/newsurl/newsurl_2020.jl'
+python newsurl.py '2021-1-1' '2021-12-31' '../../datasets/newsurl/newsurl_2021.jl'
+python newsurl.py '2022-1-1' '2022-12-31' '../../datasets/newsurl/newsurl_2022.jl'
+python newsurl.py '2023-1-1' '2023-5-31' '../../datasets/newsurl/newsurl_2023.jl'
