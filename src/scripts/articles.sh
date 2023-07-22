@@ -1,0 +1,18 @@
+#!/bash
+echo "hi"
+python articles.py 2008 '../../datasets/newsurl/newsurl_2008.jl' '../../datasets/articles/articles_2008.jl'
+python articles.py 2009 '../../datasets/newsurl/newsurl_2009.jl' '../../datasets/articles/articles_2009.jl'
+python articles.py 2010 '../../datasets/newsurl/newsurl_2010.jl' '../../datasets/articles/articles_2010.jl'
+python articles.py 2011 '../../datasets/newsurl/newsurl_2011.jl' '../../datasets/articles/articles_2011.jl'
+python articles.py 2012 '../../datasets/newsurl/newsurl_2012.jl' '../../datasets/articles/articles_2012.jl'
+python articles.py 2013 '../../datasets/newsurl/newsurl_2013.jl' '../../datasets/articles/articles_2013.jl'
+python articles.py 2014 '../../datasets/newsurl/newsurl_2014.jl' '../../datasets/articles/articles_2014.jl'
+python articles.py 2015 '../../datasets/newsurl/newsurl_2015.jl' '../../datasets/articles/articles_2015.jl'
+python articles.py 2016 '../../datasets/newsurl/newsurl_2016.jl' '../../datasets/articles/articles_2016.jl'
+python articles.py 2017 '../../datasets/newsurl/newsurl_2017.jl' '../../datasets/articles/articles_2017.jl'
+python articles.py 2018 '../../datasets/newsurl/newsurl_2018.jl' '../../datasets/articles/articles_2018.jl'
+python articles.py 2019 '../../datasets/newsurl/newsurl_2019.jl' '../../datasets/articles/articles_2019.jl'
+python articles.py 2020 '../../datasets/newsurl/newsurl_2020.jl' '../../datasets/articles/articles_2020.jl'
+python articles.py 2021 '../../datasets/newsurl/newsurl_2021.jl' '../../datasets/articles/articles_2021.jl'
+python articles.py 2022 '../../datasets/newsurl/newsurl_2022.jl' '../../datasets/articles/articles_2022.jl'
+python articles.py 2023 '../../datasets/newsurl/newsurl_2023.jl' '../../datasets/articles/articles_2023.jl'
