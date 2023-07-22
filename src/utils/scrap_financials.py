@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import requests
 import re
+import time
 
 def scrap_financial_results_placeholer(uri):
     base_uri = "https://www.bseindia.com/corporates/"
@@ -37,7 +38,15 @@ def scrap_financial_results_placeholer(uri):
     return(qtr_results, yrly_results)
 
 def scrap_financial_result(uri):
-    response = requests.get(uri, headers = {'User-Agent':'Mozilla/5.0'})
+    # handle requests failure
+    while True:
+        try:
+            response = requests.get(uri, headers = {'User-Agent':'Mozilla/5.0'})
+            break
+        except:
+            print("scraping failed for uri:", uri)
+            time.sleep(10)
+            
     soup = bs(response.content, features='lxml')
     columns = soup.find_all(class_='TTRow_left')
     values = soup.find_all(class_='TTRow_right')
@@ -74,14 +83,17 @@ def combine_financial_result(results):
 
             # dorp the first row, which is column name for financial data values
             financial_df = financial_df.iloc[1:, ]
+                        
+            # select one of the eps features from many a names available
+            financial_df = filter_eps_cols(financial_df)
+            
             # create date range for which report would be valid
             date_range = pd.date_range(start=report_dates['start_date'], end=report_dates['end_date'])
-
 
             financial_df= pd.concat([financial_df]*len(date_range), ignore_index=True)
             financial_df['date'] = date_range                   
             if indx == 0:
-                financials_df = financial_df.copy()
+                financials_df = financial_df.copy()                
             else:
                 financial_df = financial_df.loc[~financial_df.index.duplicated(keep='first')].copy()
 
@@ -91,7 +103,7 @@ def combine_financial_result(results):
                 financial_df = financial_df.loc[:, columns2].copy()
                 try:
                     financials_df = pd.concat([financials_df, financial_df], axis=0)
-                    print("financials_df columns length:", len(financials_df.columns.tolist()))
+                    print("financials_df columns length:", len(financials_df.columns.tolist()))                    
                 except:
                     print("dataframe concatenation failed for term:", term, uri)
     return(financials_df)
@@ -102,3 +114,24 @@ def clean_financial_columns(columns):
         columns[indx] = columns[indx].split()
         columns[indx] = '_'.join([word for word in columns[indx] if len(word) >= 2])
     return(columns)
+
+# data cleaning for eps columns
+# often eps feature names are different across companies/quarterly/yearly reports
+# this method is to provide one common name to eps feature
+def filter_eps_cols(df):
+    fin_df = df.copy()
+    basic_eps_cols = [col for col in fin_df.columns.tolist() if 'Basic' in col]
+    diluted_eps_cols = [col for col in fin_df.columns.tolist() if 'Diluted' in col]
+    eps_cols = basic_eps_cols + diluted_eps_cols
+
+    if len(basic_eps_cols) > 1:
+            fin_df['basic_eps'] = np.where(fin_df[basic_eps_cols[0]], fin_df[basic_eps_cols[0]], fin_df[basic_eps_cols[1]])
+    else:
+        fin_df['basic_eps'] = fin_df[basic_eps_cols[0]]
+
+    if len(diluted_eps_cols) > 1:
+        fin_df['diluted_eps'] = np.where(fin_df[diluted_eps_cols[0]], fin_df[diluted_eps_cols[0]], fin_df[diluted_eps_cols[1]])
+    else:
+        fin_df['diluted_eps'] = fin_df[diluted_eps_cols[0]]
+    return(fin_df)
+    

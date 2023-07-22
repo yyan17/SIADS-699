@@ -2,15 +2,16 @@ from datetime import datetime
 import pandas as pd
 import numpy as np
 import argparse
+import os
 
 import sys
 sys.path.append('src/utils/')
 from scrap_financials import clean_financial_columns
 
-filter_cols = ['Other Income', 'Net Profit (+)/ Loss (-) from Ordinary Activities after Tax', 'Tax', 'Profit (+)/ Loss (-) from Ordinary Activities before Tax', 'date', 'Expenditure', 'Net Profit', 'Profit after Interest but before Exceptional Items', 'Depreciation and amortisation expense', 'Finance Costs', 'Total Income', 'Employee benefit expense', 'Exceptional Item', 'Diluted for discontinued & continuing operation', 'Basic for discontinued & continuing operation', 'Diluted EPS for continuing operation', 'Basic EPS for continuing operation']
+qtr_cols = ['Depreciation and amortisation expense_QTR', 'Employee Benefit Expenses_QTR', 'Employee benefit expense_QTR', 'Equity Capital_QTR', 'Exceptional Item_QTR', 'Expenditure_QTR', 'Face Value (in Rs)_QTR', 'Finance Costs_QTR', 'Interest_QTR', 'Net Profit (+)/ Loss (-) from Ordinary Activities after Tax_QTR', 'Net Profit_QTR', 'Number of Public Shareholding_QTR', 'Other Income_QTR', 'Percentage of Public Shareholding_QTR', 'Profit (+)/ Loss (-) from Ordinary Activities before Tax_QTR', 'Profit after Interest but before Exceptional Items_QTR', 'Profit before Interest and Exceptional Items_QTR', 'Profit from Operations before Other Income, Interest and Exceptional Items_QTR', 'Revenue from Operations_QTR', 'Tax_QTR', 'Total Income_QTR', 'basic_eps_QTR', 'date_QTR', 'diluted_eps_QTR']
 
-eps_cols = ['Basic for discontinued & continuing operation', 'Basic EPS for continuing operation', 
-                'Diluted for discontinued & continuing operation', 'Diluted EPS for continuing operation']
+yrly_cols = ['Depreciation and amortisation expense_YRLY', 'Employee benefit expense_YRLY', 'Exceptional Item_YRLY', 'Expenditure_YRLY', 'Finance Costs_YRLY', 'Net Profit (+)/ Loss (-) from Ordinary Activities after Tax_YRLY', 'Net Profit_YRLY', 'Other Income_YRLY', 'Profit (+)/ Loss (-) from Ordinary Activities before Tax_YRLY', 'Profit after Interest but before Exceptional Items_YRLY', 'Total Income_YRLY', 'basic_eps_YRLY', 'date_YRLY', 'diluted_eps_YRLY']
+
 tickers = ['KSB3.DE', 'IPCALAB.NS', 'CHOLAFIN.NS', 'TTML.NS', 'DLF.NS']
 
 # after checking how the model performs with these features
@@ -18,8 +19,9 @@ cols_to_drop = ['Depreciation and amortisation expense', 'Exceptional Item', 'Fi
 
 tickers = ['KSB3.DE', 'IPCALAB.NS',  'TTML.NS', 'DLF.NS', 'CHOLAFIN.NS']
 
+tickers = ['TTML.NS']
 # command to run this script
-# python src/scripts/filter_financial_features.py datasets/raw/financial_results/ datasets/processed_data/financial_results/
+# python src/scripts/process_data/filter_financial_features.py datasets/rawdata/financial_results/ datasets/processed_data/financial_results/
 
 if __name__ == "__main__":
     start_time = datetime.now()
@@ -29,26 +31,25 @@ if __name__ == "__main__":
     
     print("script started")
     args = parser.parse_args()    
+    result_files = os.listdir(args.INPUT_PATH)
     
-    for indx, ticker in enumerate(tickers):
+    for indx, filename in enumerate(result_files):
         # read the downloaded raw financial results
-        fin_df = pd.read_csv(args.INPUT_PATH + tickers[indx] + '.csv', low_memory=False)
-        fin_df = fin_df[filter_cols]
-        fin_df['basic_eps'] = np.where(fin_df['Basic for discontinued & continuing operation'], fin_df['Basic for discontinued & continuing operation'],
-                                                                                          fin_df['Basic EPS for continuing operation'])
-
-        fin_df['diluted_eps'] = np.where(fin_df['Diluted for discontinued & continuing operation'], fin_df['Diluted for discontinued & continuing operation'],
-                                                                                  fin_df['Diluted EPS for continuing operation'])    
-        fin_df = fin_df.drop(columns=eps_cols)
+        print(filename)
+        fin_df = pd.read_csv(args.INPUT_PATH + filename, low_memory=False)
         
+        # filter only predefined colums financial results dataframe
+        if 'QTR' in filename:
+            filter_cols = qtr_cols
+        else:
+            filter_cols = yrly_cols
+        fin_df = fin_df[filter_cols]
+                            
         # clean and normalize the column names for financial result data
         new_columns = clean_financial_columns(fin_df.columns.tolist())
         fin_df.columns = new_columns
         
-#         fin_df = fin_df.reindex(columns= (['date'] + list(col for col in new_columns if col != 'date')))
-#         df.head()
         # write the filtered financial features in the privided output path 
-        filename = ticker + '.csv'
         fin_df.to_csv(args.OUTPUT_PATH + filename, index=False)
         
     end_time = datetime.now()
