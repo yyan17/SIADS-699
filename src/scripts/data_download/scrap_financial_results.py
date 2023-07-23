@@ -12,6 +12,9 @@ from scrap_financials import scrap_financial_results_placeholer, scrap_financial
 tickers = ['KSB3.DE', 'IPCALAB.NS',  'TTML.NS', 'DLF.NS', 'CHOLAFIN.NS']
 scrips = [500249, 524494,  532371, 532868, 511243]
 
+# tickers = ['TTML.NS']
+# scrips = [ 532371]
+
 baseuri = "https://www.bseindia.com/corporates/Comp_Results.aspx?"
 
 # command to run this script
@@ -36,13 +39,17 @@ if __name__ == "__main__":
         qtr_results, yrly_results = scrap_financial_results_placeholer(uri)
 
         # scrap quarterly/yearly financial results from result webpage
-        qtry_financial_df = combine_financial_result(qtr_results)
-        yrly_financial_df = combine_financial_result(yrly_results)
-        
+        result_types = ['QTR', 'YRLY']
+        for result, result_type  in zip([qtr_results, yrly_results], result_types):
+            financial_df = combine_financial_result(result)
+            # change columns names to reflect quarterly/yearly results
+            financial_df.columns = ['date'] + [col + '_' + result_type for col in financial_df.columns.tolist() if col != 'date']
+
+            filename = ticker + '_' + result_type +'.csv'
+            financial_df.to_csv(args.OUTPUT_PATH + filename, index=False)
+                        
         # combine quarterly/yearly financial results dataframe
-        financials_df = pd.concat([qtry_financial_df, yrly_financial_df])
-        filename = ticker + '.csv'
-        financials_df.to_csv(args.OUTPUT_PATH + filename, index=False)
+        # financials_df = pd.concat([qtr_financial_df, yrly_financial_df])
         
     end_time = datetime.now()
     running_time = end_time - start_time
