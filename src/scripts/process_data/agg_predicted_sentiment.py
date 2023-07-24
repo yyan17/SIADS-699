@@ -22,7 +22,7 @@ agg_topic_sent_cols = ['date', 'topic_id', 'polarity', 'subjectivity', 'compound
 ticker_sent_cols = ['date', 'ticker', 'article', 'compound', 'polarity']
 
 # command to run the script 
-# python src/scripts/process_data/agg_predicted_sentiment.py datasets/rawdata/articles/  datasets/processed_data/sentiment_scores/ datasets/processed_data/topic_labels/ datasets/processed_data/agg_sentiment_scores_test/
+# python src/scripts/process_data/agg_predicted_sentiment.py datasets/rawdata/articles/  datasets/processed_data/sentiment_scores/ datasets/processed_data/topic_labels/ datasets/processed_data/agg_sentiment_scores/
 
 if __name__ == '__main__':
     start_time = datetime.now()
@@ -48,7 +48,7 @@ if __name__ == '__main__':
         year, articles_df = next(articles_gen)
 
         # used for stub testing
-#         articles_df = articles_df.head(1000)
+#         articles_df = articles_df.head(10)
 
         # preprocess the articles to get clean text
         articles_df.loc[:, 'clean_text'] = articles_df.loc[:, 'article'].apply(lambda text : 
@@ -73,6 +73,12 @@ if __name__ == '__main__':
         ticker_news_sent_df = agg_ticker_news_sentiment(sentiment_df, articles_df)
         out_ticker_sentiment_df = pd.concat([out_ticker_sentiment_df, ticker_news_sent_df])
    
+
+    # change sentiment column names to relfect sentiment type
+    out_agg_sentiment_df.columns = ['date'] + ['agg_' + col for col in out_agg_sentiment_df.columns.tolist() if col != 'date']
+    out_topic_sentiment_df.columns = ['date'] + ['topic_' + col for col in out_topic_sentiment_df.columns.tolist() if col != 'date']
+    out_ticker_sentiment_df.columns = ['date'] + ['ticker_' + col for col in out_ticker_sentiment_df.columns.tolist() if col != 'date']
+    
     # write all three kinds of sentiments scores in file
     out_agg_sentiment_df.to_csv(args.OUTPUT_PATH + 'agg_sentiment.csv', index=False)
     out_topic_sentiment_df.to_csv(args.OUTPUT_PATH + 'agg_sent_topic.csv', index=False)
