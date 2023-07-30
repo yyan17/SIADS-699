@@ -37,15 +37,17 @@ if __name__ == "__main__":
         print(filename)
         fin_df = pd.read_csv(args.INPUT_PATH + filename, low_memory=False)
         
-        # filter only predefined colums financial results dataframe
+        # exclude the above defined columns from common columns
         if 'QTR' in filename:
             # exclude these columns with less data present
-            filter_cols = qtr_cols
-#             filter_cols = list(set(qtr_cols) - set(qtr_excl_cols))
-            print(len(qtr_cols), len(filter_cols))
+            filter_cols = list(set(qtr_cols) - set(qtr_excl_cols))            
         else:
-            filter_cols = yrly_cols
-#             filter_cols = list(set(yrly_cols) - set(yrly_excl_cols))
+            filter_cols = list(set(yrly_cols) - set(yrly_excl_cols))
+        
+        # rearrange the columns to keep date as first coumn 
+        filter_cols = ['date'] + [col for col in filter_cols if col != 'date']
+        
+        # filter only predefined colums financial results dataframe
         fin_df = fin_df[filter_cols].copy()
                             
         # clean and normalize the column names for financial result data
