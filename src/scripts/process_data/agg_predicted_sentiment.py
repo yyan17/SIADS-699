@@ -16,6 +16,11 @@ sys.path.append('src/utils')
 import text_preprocessing, data_load
 from sentiment_prediction import get_textblob_sentiment, get_vader_sentiment, agg_topic_sentiment, get_ticker_news_sentiment, agg_ticker_news_sentiment
 
+# top 5 tickers for which to create sentiment features(daily news sentiment, industry topic news sentiment and ticker news sentiment)
+tickers = ['EIHOTEL.BO', 'ELGIEQUIP.BO', 'IPCALAB.NS', 'PGHL.BO', 'TV18BRDCST.BO']
+company_names = ['EIH Limited', 'Elgi Equipments', 'Ipca Laboratories', 'Procter & Gamble Health', 'TV18 Broadcast']
+ticker_dic = dict(zip(tickers, company_names))
+
 
 agg_sent_cols = ['date', 'polarity', 'subjectivity', 'compound']
 agg_topic_sent_cols = ['date', 'topic_id', 'polarity', 'subjectivity', 'compound']
