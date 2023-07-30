@@ -31,7 +31,7 @@ def scrap_financial_results_placeholer(uri):
                     if year >= 8:
                         yrly_results['term'].append(report.text)
                         yrly_results['uri'].append(report['href'])
-                    
+
     # clean the result url for quarterly and yearly reports
     qtr_results['uri'] = [(base_uri + uri_param).replace(' ', '%20').replace("amp;", '') for uri_param in qtr_results['uri']]
     yrly_results['uri'] = [(base_uri + uri_param).replace(' ', '%20').replace("amp;", '') for uri_param in yrly_results['uri']]
@@ -126,12 +126,35 @@ def filter_eps_cols(df):
 
     if len(basic_eps_cols) > 1:
             fin_df['basic_eps'] = np.where(fin_df[basic_eps_cols[0]], fin_df[basic_eps_cols[0]], fin_df[basic_eps_cols[1]])
-    else:
+    elif len(basic_eps_cols) == 1:
         fin_df['basic_eps'] = fin_df[basic_eps_cols[0]]
-
+    else:
+        fin_df['basic_eps'] = None
     if len(diluted_eps_cols) > 1:
         fin_df['diluted_eps'] = np.where(fin_df[diluted_eps_cols[0]], fin_df[diluted_eps_cols[0]], fin_df[diluted_eps_cols[1]])
-    else:
+    elif len(diluted_eps_cols) == 1:
         fin_df['diluted_eps'] = fin_df[diluted_eps_cols[0]]
+    else:
+        # if diluted eps is not reported, consider it same as basic eps
+        fin_df['diluted_eps'] = fin_df['basic_eps']
     return(fin_df)
+    
+# this method reads all the scraped raw financial resutls and gets result column, which is reported across all tickers
+# this is to have consistency across all tickers and maintain the consistent shape for all tickers
+def get_common_columns(path, tickers, result_type):
+    for indx, ticker in enumerate(tickers):
+        ticker_df = pd.read_csv(path + ticker + '_' + result_type + '.csv')
+        curr_cols = set(ticker_df.columns.tolist())
+        if indx == 0:
+            ticker_cols = curr_cols
+        else:
+            # get common columns across all tickers
+            ticker_cols = ticker_cols.intersection(curr_cols)
+
+    ticker_cols = list(ticker_cols)    
+    # remove the blank column scraped from site
+    ticker_cols.remove('_' + result_type)
+    
+    ticker_cols = ['date'] + [ticker for ticker in ticker_cols if ticker != 'date']
+    return(ticker_cols)
     
