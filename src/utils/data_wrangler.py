@@ -32,7 +32,7 @@ def data_cleaning(df, drop_cols):
     data_df = data_df.drop(columns = drop_cols)
     data_df.columns = [col.lower() for col in data_df.columns]
     data_df = data_df.replace([np.inf, -np.inf], np.nan)
-    data_df = data_df.fillna(method='ffill', axis=1)
+#     data_df = data_df.fillna(method='ffill')
     data_df = data_df.convert_dtypes()
     return(data_df)
 
@@ -86,7 +86,7 @@ def timeseries_to_supervise(df, window_size, target):
 def data_cleaning_financial(df):
     fin_df = df.copy()
     fin_df = fin_df.replace([np.inf, -np.inf], np.nan)
-    fin_df = fin_df.fillna(method='ffill', axis=1).fillna(method='bfill', axis=1)    
+    fin_df = fin_df.fillna(method='ffill').fillna(method='bfill')    
 
     date_col = fin_df['date']    
     num_df = fin_df.drop(columns='date')
@@ -121,19 +121,18 @@ def read_financial_features(data_paths, ticker):
 
     qtr_fin_df = qtr_fin_df.rename(columns={'date_qtr': 'date'})
     yrly_fin_df = yrly_fin_df.rename(columns={'date_yrly': 'date'})
-
-
-    qtr_fin_df = data_cleaning_financial(qtr_fin_df)
-    yrly_fin_df = data_cleaning_financial(yrly_fin_df)
     return(qtr_fin_df, yrly_fin_df)
 
 
 def preprocess_index_features(path, ticker, day='today'):
     ticker_df = pd.read_csv(path + ticker + '.csv')
     ticker_df['yesterday_Close'] = ticker_df['Close'].shift(+1)
-    ticker_df[ticker + '_' + 'PERCENT_CHANGE'] = (ticker_df['Close'] - ticker_df['yesterday_Close'])/ticker_df['yesterday_Close']
+    # for eastern countries, market is not yet close today, it is opened few hours before Indian market, so we use their todays' Open and yesterday Close price to compute the percent change in the market today
+    ticker_df[ticker + '_' + 'PERCENT_CHANGE'] = (ticker_df['Open'] - ticker_df['yesterday_Close'])/ticker_df['yesterday_Close']
 
     if day == 'yesterday':
+    # for western markets, they have already closed and are one day behind, hence we compute the percent change in Close from yesterday Close and move it one day ahead, when it can be used for Indian markets
+        ticker_df[ticker + '_' + 'PERCENT_CHANGE'] = (ticker_df['Close'] - ticker_df['yesterday_Close'])/ticker_df['yesterday_Close']
         ticker_df[ticker + '_' + 'PERCENT_CHANGE'] = ticker_df[ticker + '_' + 'PERCENT_CHANGE'].shift(+1)
     return(ticker_df[['Date', ticker + '_' + 'PERCENT_CHANGE']])
 
@@ -156,5 +155,5 @@ def combine_index_features(path, yesterday_index, todays_index):
 def create_index_features(data_paths):
     file = os.listdir(data_paths['INDEX_FEATURES'])
     index_features_df = pd.read_csv(data_paths['INDEX_FEATURES'] + file[0])
-    index_features_df = index_features_df.fillna(method='ffill', axis=1)
+    index_features_df = index_features_df.fillna(method='ffill')
     return(index_features_df)

@@ -6,20 +6,15 @@ import os
 
 import sys
 sys.path.append('src/utils/')
-from scrap_financials import clean_financial_columns
+from data_wrangler import missing_cols, data_cleaning_financial
+from scrap_financials import clean_financial_columns, get_common_columns
 
-qtr_cols = ['Depreciation and amortisation expense_QTR', 'Employee Benefit Expenses_QTR', 'Employee benefit expense_QTR', 'Equity Capital_QTR', 'Exceptional Item_QTR', 'Expenditure_QTR', 'Face Value (in Rs)_QTR', 'Finance Costs_QTR', 'Interest_QTR', 'Net Profit (+)/ Loss (-) from Ordinary Activities after Tax_QTR', 'Net Profit_QTR', 'Number of Public Shareholding_QTR', 'Other Income_QTR', 'Percentage of Public Shareholding_QTR', 'Profit (+)/ Loss (-) from Ordinary Activities before Tax_QTR', 'Profit after Interest but before Exceptional Items_QTR', 'Profit before Interest and Exceptional Items_QTR', 'Profit from Operations before Other Income, Interest and Exceptional Items_QTR', 'Revenue from Operations_QTR', 'Tax_QTR', 'Total Income_QTR', 'basic_eps_QTR', 'date_QTR', 'diluted_eps_QTR']
+qtr_excl_cols = ['Exceptional Item_QTR', 'Diluted EPS for continuing operation_QTR', 'Basic EPS for continuing operation_QTR', 'Employee Benefit Expenses_QTR', 'Employee benefit expense_QTR', 'Diluted for discontinued & continuing operation_QTR']
 
-yrly_cols = ['Depreciation and amortisation expense_YRLY', 'Employee benefit expense_YRLY', 'Exceptional Item_YRLY', 'Expenditure_YRLY', 'Finance Costs_YRLY', 'Net Profit (+)/ Loss (-) from Ordinary Activities after Tax_YRLY', 'Net Profit_YRLY', 'Other Income_YRLY', 'Profit (+)/ Loss (-) from Ordinary Activities before Tax_YRLY', 'Profit after Interest but before Exceptional Items_YRLY', 'Total Income_YRLY', 'basic_eps_YRLY', 'date_YRLY', 'diluted_eps_YRLY']
+yrly_excl_cols = ['Exceptional Item_YRLY', 'Basic EPS for continuing operation_YRLY', 'Diluted EPS for continuing operation_YRLY', 'Employee Benefit Expenses_YRLY', 'Employee benefit expense_YRLY', 'Diluted for discontinued & continuing operation_YRLY', 'Finance Costs_YRLY', 'Deferred tax_YRLY', 'Basic for discontinued & continuing operation_YRLY', 'Current tax_YRLY', 'Total Income_YRLY', 'Basic & Diluted EPS after Extraordinary items_YRLY', 'Net Sales_YRLY', 'Profit before Interest and Exceptional Items_YRLY', 'Profit from Operations before Other Income, Interest and Exceptional Items_YRLY', 'Equity Capital_YRLY']
 
-tickers = ['KSB3.DE', 'IPCALAB.NS', 'CHOLAFIN.NS', 'TTML.NS', 'DLF.NS']
+tickers = ['AARTIIND.BO', 'EIHOTEL.BO', 'ELGIEQUIP.BO', 'IPCALAB.BO', 'PGHL.BO', 'SONATSOFTW.BO', 'SUPREMEIND.BO', 'TV18BRDCST.BO']
 
-# after checking how the model performs with these features
-cols_to_drop = ['Depreciation and amortisation expense', 'Exceptional Item', 'Finance Costs']
-
-tickers = ['KSB3.DE', 'IPCALAB.NS',  'TTML.NS', 'DLF.NS', 'CHOLAFIN.NS']
-
-tickers = ['TTML.NS']
 # command to run this script
 # python src/scripts/process_data/filter_financial_features.py datasets/rawdata/financial_results/ datasets/processed_data/financial_results/
 
@@ -33,6 +28,10 @@ if __name__ == "__main__":
     args = parser.parse_args()    
     result_files = os.listdir(args.INPUT_PATH)
     
+    # get common attributes reported across these 5 tickers and 
+    qtr_cols = get_common_columns(args.INPUT_PATH, tickers, 'QTR')
+    yrly_cols = get_common_columns(args.INPUT_PATH, tickers, 'YRLY')    
+    
     for indx, filename in enumerate(result_files):
         # read the downloaded raw financial results
         print(filename)
@@ -40,16 +39,24 @@ if __name__ == "__main__":
         
         # filter only predefined colums financial results dataframe
         if 'QTR' in filename:
+            # exclude these columns with less data present
             filter_cols = qtr_cols
+#             filter_cols = list(set(qtr_cols) - set(qtr_excl_cols))
+            print(len(qtr_cols), len(filter_cols))
         else:
             filter_cols = yrly_cols
-        fin_df = fin_df[filter_cols]
+#             filter_cols = list(set(yrly_cols) - set(yrly_excl_cols))
+        fin_df = fin_df[filter_cols].copy()
                             
         # clean and normalize the column names for financial result data
         new_columns = clean_financial_columns(fin_df.columns.tolist())
         fin_df.columns = new_columns
         
+        # clean financial features
+#         fin_df = data_cleaning_financial(fin_df)
+        
         # write the filtered financial features in the privided output path 
+        fin_df = fin_df.sort_values('date')
         fin_df.to_csv(args.OUTPUT_PATH + filename, index=False)
         
     end_time = datetime.now()
