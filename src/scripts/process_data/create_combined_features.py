@@ -39,7 +39,7 @@ target_price = 'high'
 rolling_exclude_cols = ['open', 'date','close','adj close','volume', 'low', 'high']
 # feature_exclude_cols = ['open', 'date','close','adj close','volume', 'low']
 
-feature_exclude_cols = ['date','adj close','volume']
+feature_exclude_cols = ['date']
 seed= 42
 
 
@@ -65,11 +65,11 @@ if __name__ == "__main__":
 
         # data cleaning, handling missing/infinite values, dorp columns with mostly na values
         clean_df = data_cleaning(tickers_df, cols_to_drop)
-        # print("shape of tickers after data cleaning", clean_df.shape)
+        print("shape of tickers after data cleaning", clean_df.shape)
         
         # create rolling average feature over the timeframe of provide time frame(window list) list
         feature_df = create_rolling_features(clean_df, window_lst, rolling_exclude_cols)
-        # print("shape for features after creating rolling features", feature_df.shape)
+        print("shape for features after creating rolling features", feature_df.shape)
         
         # combine all sentiment scores to create ready useable features
         sentiment_df = read_sentiment_features(data_paths, topic, ticker)
@@ -78,7 +78,7 @@ if __name__ == "__main__":
         qtr_fin_df, yrly_fin_df = read_financial_features(data_paths, ticker)
         qtr_fin_df = data_cleaning_financial(qtr_fin_df)
         yrly_fin_df = data_cleaning_financial(yrly_fin_df)        
-        # print("shape of qtr/yrly financial results:", qtr_fin_df.shape, yrly_fin_df.shape)
+        print("shape of qtr/yrly financial results:", qtr_fin_df.shape, yrly_fin_df.shape)
         
         # read index features computed for foreign indexes like US, China, Singapore, inlcuding Dollar rate, INR rate, oil price etc.
         index_features_df = pd.read_csv(data_paths['INDEX_FEATURES'] + 'index_features.csv')
@@ -86,18 +86,18 @@ if __name__ == "__main__":
 
         # combine all the features 
         combined_df = feature_df.merge(qtr_fin_df, on='date', how='left')
-        # print("shape after merging qtr results", combined_df.shape)
+        print("shape after merging qtr results", combined_df.shape)
         
         combined_df = combined_df.merge(yrly_fin_df, on='date', how='left')
-        # print("shape after merging yrly results", combined_df.shape)
+        print("shape after merging yrly results", combined_df.shape)
 
         # combine sentiment scores features
         combined_df = combined_df.merge(sentiment_df, on='date', how='left')
-        # print("shape after merging sentiment features:", combined_df.shape)
+        print("shape after merging sentiment features:", combined_df.shape)
 
         # combine other index features/oli price, Rs rate, interest rate etc
         combined_df = combined_df.merge(index_features_df, on='date', how='left')
-        # print("shape after merging index features:", combined_df.shape)
+        print("shape after merging index features:", combined_df.shape)
         
         # drop date columns to handle nan values
         combined_date_df = combined_df['date']

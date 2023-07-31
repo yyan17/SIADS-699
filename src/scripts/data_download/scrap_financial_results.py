@@ -10,7 +10,7 @@ sys.path.append('src/utils/')
 from scrap_financials import scrap_financial_results_placeholer, scrap_financial_result, combine_financial_result
 
 # top 8 tickers with whole time series data
-tickers = ['EIHOTEL.BO', 'ELGIEQUIP.BO', 'IPCALAB.BO', 'PGHL.BO', 'TV18BRDCST.BO']
+tickers = ['AARTIIND.BO', 'EIHOTEL.BO', 'ELGIEQUIP.BO', 'IPCALAB.BO', 'PGHL.BO', 'SONATSOFTW.BO', 'SUPREMEIND.BO', 'TV18BRDCST.BO']
 
 baseuri = "https://www.bseindia.com/corporates/Comp_Results.aspx?"
 
@@ -44,7 +44,7 @@ if __name__ == "__main__":
 
         # scrap quarterly/yearly financial results from result webpage
         result_types = ['QTR', 'YRLY']
-        for result, result_type  in zip([qtr_results, yrly_results], result_types[:1]):
+        for result, result_type  in zip([qtr_results, yrly_results], result_types):
             financial_df = combine_financial_result(result)
                                    
             # change columns names to reflect quarterly/yearly results 

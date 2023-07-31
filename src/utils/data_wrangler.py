@@ -5,6 +5,7 @@ import numpy as np
 import time
 import os
 
+missing_val_threshold_percent = 40
              
 def load_rawdata(path, tickers_list):
     files = os.listdir(path)
@@ -17,7 +18,7 @@ def load_rawdata(path, tickers_list):
         tickers_df = pd.concat([tickers_df, ticker_df])
     return(tickers_df)
 
-def missing_cols(df, topn): 
+def find_topn_missing_val_cols(df, topn): 
     # make a copy of the dataframe, so as not to change the source dataframe
     data_df = df.copy()
     
@@ -26,6 +27,25 @@ def missing_cols(df, topn):
     mssing_col_df.columns = ['column', 'percent_missing']
     topn_missing_col_df = mssing_col_df.iloc[:topn, :].reset_index(drop=True)
     return(topn_missing_col_df)
+
+def find_missing_val_cols_by_threshold(df, percent): 
+    # find the missing values percentage for all the columns
+    missing_df = find_topn_missing_val_cols(df, None)
+    
+    # find the columns which have missing values more than provided percent
+    cond = np.where(missing_df['percent_missing'] > percent)
+    missing_cols = missing_df.iloc[cond].column.tolist()
+    return(missing_cols)
+
+
+def find_all_missing_val_cols(path, results, usecols):
+    missing_value_cols = set()
+    for indx, result in enumerate(results):
+        df = pd.read_csv(path + result, usecols=usecols)
+        curr_missing_value_cols = find_missing_val_cols_by_threshold(df, missing_val_threshold_percent)
+        missing_value_cols = missing_value_cols.union(curr_missing_value_cols)
+    return(list(missing_value_cols))
+
 
 def data_cleaning(df, drop_cols):
     data_df = df.copy()

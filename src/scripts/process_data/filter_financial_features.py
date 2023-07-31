@@ -6,7 +6,7 @@ import os
 
 import sys
 sys.path.append('src/utils/')
-from data_wrangler import missing_cols, data_cleaning_financial
+from data_wrangler import data_cleaning_financial, find_topn_missing_val_cols, find_missing_val_cols_by_threshold, find_all_missing_val_cols
 from scrap_financials import clean_financial_columns, get_common_columns
 
 qtr_excl_cols = ['Exceptional Item_QTR', 'Diluted EPS for continuing operation_QTR', 'Basic EPS for continuing operation_QTR', 'Employee Benefit Expenses_QTR', 'Employee benefit expense_QTR', 'Diluted for discontinued & continuing operation_QTR']
@@ -14,7 +14,7 @@ qtr_excl_cols = ['Exceptional Item_QTR', 'Diluted EPS for continuing operation_Q
 yrly_excl_cols = ['Exceptional Item_YRLY', 'Basic EPS for continuing operation_YRLY', 'Diluted EPS for continuing operation_YRLY', 'Employee Benefit Expenses_YRLY', 'Employee benefit expense_YRLY', 'Diluted for discontinued & continuing operation_YRLY', 'Finance Costs_YRLY', 'Deferred tax_YRLY', 'Basic for discontinued & continuing operation_YRLY', 'Current tax_YRLY', 'Total Income_YRLY', 'Basic & Diluted EPS after Extraordinary items_YRLY', 'Net Sales_YRLY', 'Profit before Interest and Exceptional Items_YRLY', 'Profit from Operations before Other Income, Interest and Exceptional Items_YRLY', 'Equity Capital_YRLY']
 
 tickers = ['AARTIIND.BO', 'EIHOTEL.BO', 'ELGIEQUIP.BO', 'IPCALAB.BO', 'PGHL.BO', 'SONATSOFTW.BO', 'SUPREMEIND.BO', 'TV18BRDCST.BO']
-
+missing_val_threshold_percent = 40
 # command to run this script
 # python src/scripts/process_data/filter_financial_features.py datasets/rawdata/financial_results/ datasets/processed_data/financial_results/
 
@@ -28,9 +28,15 @@ if __name__ == "__main__":
     args = parser.parse_args()    
     result_files = os.listdir(args.INPUT_PATH)
     
+    qtr_results = [result for result in result_files if 'QTR' in result]
+    yrly_results = [result for result in result_files if 'YRLY' in result]    
+    
     # get common attributes reported across these 5 tickers and 
     qtr_cols = get_common_columns(args.INPUT_PATH, tickers, 'QTR')
     yrly_cols = get_common_columns(args.INPUT_PATH, tickers, 'YRLY')    
+    
+    qtr_excl_cols = find_all_missing_val_cols(args.INPUT_PATH, qtr_results, qtr_cols)
+    yrly_excl_cols = find_all_missing_val_cols(args.INPUT_PATH, yrly_results, yrly_cols)
     
     for indx, filename in enumerate(result_files):
         # read the downloaded raw financial results
