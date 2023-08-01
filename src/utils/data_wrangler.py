@@ -177,3 +177,31 @@ def create_index_features(data_paths):
     index_features_df = pd.read_csv(data_paths['INDEX_FEATURES'] + file[0])
     index_features_df = index_features_df.fillna(method='ffill')
     return(index_features_df)
+
+def create_custom_target(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    This function creates the custom target price, which is computed as ln(high/yesterday_close)
+    """    
+    # make a copy of the dataframe so as not to change the original dataframe
+    data_df = df.copy()
+    
+    # create yesterday_close feature as
+    data_df['yesterday_close'] = data_df['close'].shift(1)
+    
+    # create custom target price to predict, computing  ln(high/yesterday_close)
+    data_df['ln_target'] = np.log(data_df['high'] / data_df['yesterday_close'])
+    
+    # as yesterday close would not be available for first day, 
+    # we would not have custom target price for that day, which needs to be excluded 
+    return(data_df.iloc[1:, ])
+    
+    
+def convert_custom_target_to_actual(df: pd.DataFrame, window: int, y: "pd.Series[int]") -> "pd.Series[int]":
+    """
+    this module converts custom target - ln(high/yesterday_close) to actual high price again
+    """
+    data_df = df.copy()
+    
+    # exclude first 10 rows of train/test data, as while us
+    y = np.exp(y) * data_df.loc[data_df.index[window:], 'yesterday_close'].reset_index(drop=True)
+    return(y)    
