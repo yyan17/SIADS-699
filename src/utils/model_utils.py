@@ -1,24 +1,36 @@
-from sklearn.metrics import mean_absolute_percentage_error
+from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error
 from sklearn.ensemble import RandomForestRegressor
 from datetime import datetime
+import xgboost as xgb
+import lightgbm as lgb
 import pandas as pd
 import numpy as np
 import shap
 seed= 42
 
-def evaluate_model(model, X_test, y_test, y_pred):
+# import user defined libraries
+from data_wrangler import convert_custom_target_to_actual
+
+def evaluate_model(model, window, dev_data, X_test, y_test):
     # do target prediction using the provide model
     y_pred = model.predict(X_test)
-    
+
+    # convert back to original value, before computing mape            
+    y_test = convert_custom_target_to_actual(dev_data, window, y_test)
+    y_pred = convert_custom_target_to_actual(dev_data, window, y_pred)
+
     # compute regression metric - mape 
     mape = mean_absolute_percentage_error(y_test, y_pred)
-    return(mape)
+
+    # compute rmse metric
+    rmse = mean_squared_error(y_test, y_pred, squared=False)        
+    return(y_pred, mape, rmse)
 
 
-def train_model(X_train, y_train):
+def train_model(model, X_train, y_train):
     start_time = datetime.now()
 
-    model = RandomForestRegressor(n_estimators=100, random_state=seed, n_jobs=-1)  # You can adjust the hyperparameters as needed
+#     model = RandomForestRegressor(n_estimators=100, random_state=seed, n_jobs=-1)  # You can adjust the hyperparameters as needed
 
     # fit the model 
     model.fit(X_train, y_train)
@@ -42,3 +54,12 @@ def extract_shap_values(model, train_data, X_train, window_size):
     feature_importance_df = pd.DataFrame(zip(average_shape_values, train_data.columns), columns=['shap_value', 'feature'])
     feature_importance_df = feature_importance_df.sort_values('shap_value', ascending=False).reset_index(drop=True)
     return(feature_importance_df)
+
+def select_model(model_name, seed):
+    if model_name == 'RandomForest':
+        model = RandomForestRegressor(random_state=seed, n_jobs=-1)  # You can adjust the hyperparameters as needed
+    elif model_name == 'XGBoost':
+        model = xgb.XGBRegressor(random_state=seed, n_jobs=-1)
+    elif model_name =='LightGBM':
+        model = lgb.LGBMRegressor(random_state=seed, n_jobs=-1)
+    return(model)
