@@ -1,502 +1,502 @@
-,Scrip Code,COMPANY,ISIN No.,Close Price,CLEAN_COMPANY,TICKER
-0,542772,360 ONE WAM Ltd,INE466L01038,441.9,360 one wam,360ONE.NS
-1,523395,3M India Ltd,INE470A01017,27827.1,3m india,3MINDIA.NS
-2,524348,Aarti Drugs Ltd,INE767A01016,466.1,aarti drugs,AARTIDRUGS.NS
-3,524208,Aarti Industries Ltd.,INE769A01020,519.95,aarti industries,AARTIIND.NS
-4,541988,AAVAS Financiers Ltd,INE216P01012,1373.3,aavas financiers,AAVAS.NS
-5,500002,ABB India Ltd,INE117A01022,4328.2,abb india,ABBOTINDIA.NS
-6,500488,Abbott India Ltd,INE358A01014,23074.0,abbott india,ABBOTINDIA.NS
-7,500410,ACC Ltd,INE012A01025,1825.4,acc,ACN
-8,512599,Adani Enterprises Ltd,INE423A01024,2403.8,adani enterprises,ADANIENT.NS
-9,541450,Adani Green Energy Ltd,INE364U01010,960.4,adani green energy,ADANIGREEN.NS
-10,532921,Adani Ports and Special Economic Zone,INE742F01042,736.05,adani ports,ADANIPORTS.NS
-11,533096,Adani Power Ltd,INE814H01011,263.7,adani power,ADANIPOWER.NS
-12,542066,Adani Total Gas Limited,INE399L01023,657.7,adani total gas limited,ATGL.NS
-13,539254,Adani Transmission Ltd,INE931S01010,806.75,adani transmission,ADANITRANS.NS
-14,543458,Adani Wilmar Ltd,INE699H01024,419.3,adani wilmar,AWL.NS
-15,540691,Aditya Birla Capital Ltd,INE674K01013,179.4,aditya birla capital,ABCAPITAL.NS
-16,535755,Aditya Birla Fashion and Retail Ltd,INE647O01011,213.4,aditya birla fashion,ABFRL.NS
-17,543374,Aditya Birla Sun Life AMC LTd,INE404A01024,368.35,aditya birla sun life amc,ABSLAMC.NS
-18,500003,Aegis Logistics Ltd,INE208C01025,346.65,aegis logistics,AEGISCHEM.NS
-19,543534,Aether Industries Ltd,INE0BWX01014,998.6,aether industries,AETHER.NS
-20,542752,Affle (India) Ltd,INE00WC01027,1023.3,affle (india),AFFLE.NS
-21,532683,AIA Engineering Ltd,INE212H01026,3402.45,aia engineering,AIAENG.NS
-22,532331,Ajanta Pharma Ltd,INE031B01049,1474.05,ajanta pharma,AJANTPHARM.NS
-23,500710,Akzo Nobel India Ltd,INE133A01011,2449.2,akzo nobel india,AKZOINDIA.NS
-24,533573,Alembic Pharmaceuticals Ltd,INE901L01018,611.9,alembic pharmaceuticals,APLLTD.NS
-25,539523,Alkem Laboratories Ltd,INE540L01014,3403.9,alkem laboratories,ALKEM.NS
-26,506767,Alkyl Amines Chemicals Ltd,INE150B01039,2721.8,alkyl amines chemicals,ALKYLAMINE.NS
-27,521070,Alok Industries Ltd,INE270A01029,17.01,alok industries,ALOKINDS.NS
-28,500008,Amara Raja Batteries Ltd,INE885A01032,636.6,amara raja batteries,AMARAJABAT.NS
-29,540902,Amber Enterprises India Ltd,INE371P01015,2105.95,amber enterprises india,AMBER.NS
-30,500425,Ambuja Cements Ltd,INE079A01024,452.55,ambuja cements,AMBUJACEM.NS
-31,543235,Angel One Limited,INE732I01013,1558.65,angel one limited,ANGELONE.NS
-32,543275,Anupam Rasayan India Ltd,INE930P01018,1080.75,anupam rasayan india,ANURAS.NS
-33,532259,Apar Industries Ltd,INE372A01015,3099.0,apar industries,APARINDS.NS
-34,533758,APL Apollo Tubes Ltd,INE702C01027,1323.6,apl apollo tubes,APLAPOLLO.NS
-35,508869,Apollo Hospitals Enterprise Ltd,INE437A01024,5142.95,apollo hospitals enterprise,APOLLOHOSP.NS
-36,500877,Apollo Tyres Ltd,INE438A01022,406.95,apollo tyres,APOLLOTYRE.NS
-37,543335,Aptus Value Housing Finance India Ltd,INE852O01025,267.55,aptus value housing finance india,APTUS.NS
-38,543657,Archean Chemical Industries Ltd,INE128X01021,557.35,archean chemical industries,ACI.NS
-39,515030,Asahi India Glass Ltd,INE439A01020,490.4,asahi india glass,ASAHIINDIA.NS
-40,500477,Ashok Leyland Ltd,INE208A01029,167.95,ashok leyl,ASHOKLEY.NS
-41,500820,Asian Paints Ltd,INE021A01026,3309.85,asian paints,ASIANPAINT.NS
-42,540975,Aster DM Healthcare Ltd,INE914M01019,287.2,aster dm healthcare,ASTERDM.NS
-43,532830,ASTRAL LIMITED,INE006I01046,1970.5,astral limited,ASTRAL.NS
-44,506820,AstraZeneca Pharm India,INE203A01020,3624.55,astrazeneca pharm india,ASTRAZEN.NS
-45,500027,Atul Ltd.,INE100A01010,7018.55,atul,ATUL.NS
-46,540611,AU Small Finance Bank Ltd,INE949L01017,772.75,au small finance bank,AUBANK.NS
-47,524804,Aurobindo Pharma Ltd,INE406A01037,677.6,aurobindo pharma,AUROPHARMA.NS
-48,512573,Avanti Feeds Ltd,INE871C01038,388.25,avanti feeds,AVANTIFEED.NS
-49,540376,Avenue Supermarts Ltd,INE192R01011,3973.9,avenue supermarts,DMART.NS
-50,532215,Axis Bank Ltd,INE238A01034,965.75,axis bank,AXISBANK.NS
-51,532977,Bajaj Auto Ltd,INE917I01010,4596.9,bajaj auto,BAJAJ-AUTO.NS
-52,500031,Bajaj Electricals Ltd,INE193E01025,1231.5,bajaj electricals,BAJAJELEC.NS
-53,500034,Bajaj Finance Ltd,INE296A01024,7384.95,bajaj finance,BAJFINANCE.NS
-54,532978,Bajaj Finserv Ltd,INE918I01026,1541.9,bajaj finserv,BAJAJFINSV.NS
-55,500490,Bajaj Holdings and Investment Ltd,INE118A01012,6983.05,bajaj holdings,BAJAJHLDNG.BO
-56,530999,Balaji Amines Ltd,INE050E01027,2369.65,balaji amines,BALAMINES.NS
-57,502355,Balkrishna Industries Ltd,INE787D01026,2346.0,balkrishna industries,BALKRISIND.NS
-58,500038,Balrampur Chini Mills Ltd,INE119A01028,395.1,balrampur chini mills,BALRAMCHIN.NS
-59,541153,Bandhan Bank Ltd,INE545U01014,249.9,b,BZ=F
-60,532134,Bank of Baroda,INE028A01039,193.7,bank of baroda,BANKBARODA.NS
-61,532149,Bank of India,INE084A01016,75.1,bank of india,SBIN.NS
-62,532525,Bank Of Maharashtra,INE457A01014,27.87,bank of maharashtra,MAHABANK.NS
-63,500042,BASF India Limited,INE373A01013,2554.5,basf india limited,BASF.NS
-64,500043,Bata India Ltimited,INE176A01028,1626.4,bata india ltimited,NA
-65,506285,Bayer CropScience Ltd/India,INE462A01022,4263.85,bayer cropscience,BAYERCROP.NS
-66,509480,Berger Paints India Ltd,INE463A01038,675.85,berger paints india,BERGEPAINT.NS
-67,541143,Bharat Dynamics Ltd,INE171Z01018,1197.45,bharat dynamics,BDL.NS
-68,500049,Bharat Electronics Ltd,INE263A01024,124.8,bharat electronics,BEL.NS
-69,500493,Bharat Forge Ltd,INE465A01025,825.35,bharat forge,BHARATFORG.NS
-70,500103,Bharat Heavy Electricals Ltd,INE257A01026,87.35,bharat heavy electricals,BHEL.NS
-71,500547,Bharat Petroleum Corp Ltd,INE029A01011,374.95,bharat petroleum corp,BPCL.NS
-72,532454,Bharti Airtel Ltd,INE397D01024,828.05,bharti airtel,BHARTIARTL.NS
-73,543653,Bikaji Foods International Ltd,INE00E101023,414.8,bikaji foods international,BIKAJI.NS
-74,532523,Biocon Ltd,INE376G01013,244.8,biocon,BIOCON.NS
-75,500335,Birla Corp Ltd,INE340A01012,1192.6,birla corp,BIRLACORPN.NS
-76,532400,Birlasoft Ltd,INE836A01035,335.55,birlasoft,BSOFT.NS
-77,526612,Blue Dart Express Ltd,INE233B01017,6644.15,blue dart express,BLUEDART.NS
-78,500067,Blue Star Ltd,INE472A01039,1525.35,blue star,BSFC
-79,501425,Bombay Burmah Trading Corp Ltd.,INE050A01025,1046.3,bombay burmah trading corp,BBTC.NS
-80,502219,Borosil Renewables Ltd,INE666D01022,548.6,borosil renewables,BORORENEW.NS
-81,500530,Bosch Ltd,INE323A01026,18955.3,bosch,BOSCHLTD.NS
-82,532929,Brigade Enterprises Ltd,INE791I01019,596.75,brigade enterprises,BRIGADE.NS
-83,500825,Britannia Industries Ltd.,INE216A01030,5016.1,britannia industries,BRITANNIA.NS
-84,543425,C.E. Info Systems Ltd,INE0BV301023,1165.5,c.e. info systems,MAPMYINDIA.NS
-85,543523,Campus Activewear Ltd,INE278Y01022,323.65,campus activewear,CAMPUS.NS
-86,511196,Can Fin Homes Ltd,INE477A01020,744.85,can fin homes,CANFINHOME.NS
-87,532483,Canara Bank,INE476A01014,304.95,canara bank,CANBK.NS
-88,524742,Caplin Point Laboratories Ltd,INE475E01026,812.75,caplin point laboratories,CAPLIPOINT.NS
-89,531595,Capri Global Capital  LTD,INE180C01026,749.35,capri global capital,CGCL.NS
-90,513375,Carborundum Universal Ltd,INE120A01034,1216.05,carborundum universal,CARBORUNIV.NS
-91,500870,Castrol India Ltd,INE172A01027,121.9,castrol india,CASTROLIND.NS
-92,519600,CCL Products (India) Ltd.,INE421D01022,659.35,ccl products (india),CCL.NS
-93,500878,CEAT Ltd,INE482A01020,2045.55,ceat,CEATLTD.NS
-94,532885,Central Bank of India,INE483A01010,27.52,central bank of india,CENTRALBK.NS
-95,532548,Century Plyboards India Ltd,INE348B01021,618.25,century plyboards india,CENTURYPLY.NS
-96,500040,Century Textile & Industries Ltd,INE055A01016,814.1,century textile,CENTURYTEX.NS
-97,532443,Cera Sanitaryware Ltd,INE739E01017,7907.4,cera sanitaryware,CERA.NS
-98,500084,CESC Ltd,INE486A01021,72.01,cesc,CESC.NS
-99,500093,CG Power and Industrial Solutions Ltd,INE067A01029,363.7,cg power,CGPOWER.NS
-100,542399,Chalet Hotels Ltd,INE427F01016,419.2,chalet hotels,CHALET.NS
-101,500085,Chambal Fertilizers & Chemicals Ltd,INE085A01013,278.35,chambal fertilizers,NA
-102,543336,Chemplast Sanmar Ltd,INE488A01050,452.7,chemplast sanmar,CHEMPLASTS.NS
-103,504973,Cholamandalam Financial Holdings Ltd,INE149A01033,935.85,cholam,CHOLAFIN.NS
-104,511243,Cholamandalam Investment & Finance Co. Ltd.,INE121A01024,1132.5,cholam,CHOLAFIN.NS
-105,532756,CIE Automotive India Ltd,INE536H01010,525.75,cie automotive india,MAHINDCIE.NS
-106,500087,Cipla Ltd/India,INE059A01026,1011.55,cipla,CIPLA.NS
-107,532210,City Union Bank Ltd.,INE491A01021,124.3,city union bank,CUB.NS
-108,543318,Clean Science and Technology Ltd,INE227W01023,1383.85,clean science,CLEAN.NS
-109,533278,Coal India Ltd,INE522F01014,227.3,coal india,COALINDIA.NS
-110,540678,Cochin Shipyard Ltd,INE704P01017,593.1,cochin shipyard,COCHINSHIP.NS
-111,532541,Coforge Ltd,INE591G01017,4562.55,coforge,COFORGE.NS
-112,500830,Colgate-Palmolive India Ltd,INE259A01022,1648.95,colgate-palmolive india,COLPAL.NS
-113,543232,Computer Age Management Services Ltd,INE596I01012,2180.45,computer age management services,CAMS.NS
-114,531344,Container Corp Of India,INE111A01025,660.7,container corp of india,CONCOR.NS
-115,506395,Coromandel International Ltd,INE169A01031,940.55,corom,COROMANDEL.NS
-116,541770,CreditAccess Grameen Ltd,INE741K01010,1272.85,creditaccess grameen,CREDITACC.NS
-117,500092,CRISIL Ltd,INE007A01025,3915.2,crisil,CRISIL.NS
-118,539876,Crompton Greaves Consumer Electricals Ltd,INE299U01018,290.05,crompton greaves consumer electricals,CROMPTON.NS
-119,542867,CSB Bank Ltd,INE679A01013,266.9,csb bank,CSBBANK.NS
-120,500480,Cummins India Ltd,INE298A01020,1876.6,cummins india,CUMMINSIND.NS
-121,532175,Cyient Ltd,INE136B01020,1513.15,cyient,CYIENT.NS
-122,500096,Dabur India Ltd,INE016A01026,569.2,dabur india,DABUR.NS
-123,542216,Dalmia Bharat Ltd,INE00R701025,2241.15,dalmia bharat,DALBHARAT.NS
-124,523367,DCM Shriram Ltd,INE499A01024,859.85,dcm shriram,DCMSHRIRAM.NS
-125,500645,Deepak Fertilisers & Petrochemicals Corp. Ltd.,INE501A01019,564.55,deepak fertilisers,DEEPAKFERT.NS
-126,506401,Deepak Nitrite Limited,INE288B01029,2174.8,deepak nitrite limited,DEEPAKNTR.NS
-127,543529,Delhivery Limited,INE148O01028,391.6,delhivery limited,DELHIVERY.NS
-128,532848,Delta Corp. Ltd.,INE124G01033,248.25,delta corp.,SDE.TO
-129,543330,Devyani International Ltd,INE872J01023,194.75,devyani international,DEVYANI.NS
-130,532488,Divi's Laboratories Ltd,INE361B01024,3583.75,divi's laboratories,DIVISLAB.NS
-131,540699,Dixon Technologies (India) Ltd,INE935N01020,4654.8,dixon technologies (india),DIXON.NS
-132,532868,DLF Ltd,INE271C01023,485.1,dlf,DLF.NS
-133,500124,Dr Reddy's Laboratories Ltd,INE089A01023,4873.5,dr reddy's laboratories,RDY
-134,539524,Dr. Lal PathLabs Ltd,INE600L01024,2121.25,dr. lal pathlabs,LALPATHLAB.NS
-135,543272,Easy Trip Planners Ltd,INE07O001026,43.42,easy trip planners,EASEMYTRIP.NS
-136,532927,eClerx Services Ltd,INE738I01010,1773.25,eclerx services,ECLERX.NS
-137,505200,Eicher Motors Ltd,INE066A01021,3494.55,eicher motors,EICHERMOT.NS
-138,500125,EID Parry India Ltd,INE126A01031,470.0,eid parry india,NA
-139,500840,EIH Ltd,INE230A01023,212.3,eih,EIHDF
-140,522074,Elgi Equipments Ltd.,INE285A01027,533.7,elgi equipments,ELGIEQUIP.NS
-141,531162,Emami Ltd,INE548C01032,416.5,emami,EMAMILTD.NS
-142,540153,Endurance Technologies Ltd,INE913H01037,1586.9,endurance technologies,ENDURANCE.NS
-143,532178,Engineers India Ltd,INE510A01028,113.7,engineers india,ENGINERSIN.NS
-144,500135,EPL Ltd,INE255A01020,204.1,epl,PLUS
-145,543243,Equitas Small Finance Bank Ltd,INE063P01018,87.99,equitas small finance bank,EQUITASBNK.NS
-146,540596,Eris Lifesciences Ltd,INE406M01024,676.8,eris lifesciences,ERIS.NS
-147,500133,Esab India Ltd,INE284A01012,3991.35,esab india,ESABINDIA.NS
-148,500495,Escorts Ltd,INE042A01014,2196.8,escorts,ESCORTS.NS
-149,543482,Eureka Forbes Limited,INE0KCE01017,580.5,eureka forbes limited,EUREKAFORBE.BO
-150,500086,Exide Industries Ltd,INE302A01020,213.2,exide industries,EXIDEIND.NS
-151,531599,FDC Ltd,INE258B01022,308.6,fdc,FDCPX
-152,500469,Federal Bank Ltd,INE171A01029,123.1,federal bank,FEDERALBNK.NS
-153,541557,Fine Organic Industries Ltd,INE686Y01026,4904.4,fine organic industries,FINEORG.NS
-154,500144,Finolex Cables Ltd,INE235A01022,855.55,finolex cables,FINCABLES.NS
-155,500940,Finolex Industries Ltd,INE183A01024,175.4,finolex industries,FINPIPE.NS
-156,532809,Firstsource Solutions Ltd,INE684F01012,129.9,firstsource solutions,FSL.NS
-157,543663,Five-Star Business Finance Ltd,INE128S01021,651.15,five-star business finance,FIVESTAR.NS
-158,532843,Fortis Healthcare Ltd.,INE061F01013,306.25,fortis healthcare,FORTIS.NS
-159,543384,FSN E-Commerce Ventures Ltd,INE388Y01029,150.45,fsn e-commerce ventures,NYKAA.NS
-160,543317,G R Infraprojects Ltd,INE201P01022,1248.65,g r infraprojects,GRINFRA.NS
-161,532155,Gail India Ltd,INE129A01019,108.0,gail india,GAIL.NS
-162,540935,Galaxy Surfactants Ltd,INE600K01018,2846.5,galaxy surfactants,GALAXYSURF.NS
-163,509557,Garware Technical Fibres Ltd,INE276A01018,3181.8,garware technical fibres,GARFIBRES.NS
-164,540755,General Insurance Corporation of India,INE481Y01014,188.1,general insurance corporation of india,GICRE.NS
-165,507815,Gillette India Ltd,INE322A01010,4514.0,gillette india,GILLETTE.NS
-166,543245,Gland Pharma Ltd,INE068V01023,1023.65,gl,GL
-167,500660,GlaxoSmithKline Pharmaceuticals Ltd,INE159A01016,1414.6,glaxosmithkline pharmaceuticals,GLAXO.NS
-168,532296,Glenmark Pharmaceuticals Ltd,INE935A01035,640.65,glenmark pharmaceuticals,GLENMARK.NS
-169,543654,Global Health Ltd,INE474Q01031,637.85,global health,IXJ
-170,505255,GMM Pfaudler Limited,INE541A01023,1512.45,gmm pfaudler limited,GMMPFAUDLR.NS
-171,532754,GMR Airports Infrastructure Ltd,INE776C01039,42.6,gmr airports infrastructure,GMRINFRA.NS
-172,500163,Godfrey Phillips India Ltd,INE260B01028,1717.0,godfrey phillips india,GODFRYPHLP.NS
-173,540743,Godrej Agrovet Ltd,INE850D01014,455.45,godrej agrovet,GODREJAGRO.NS
-174,532424,Godrej Consumer Products Ltd,INE102D01028,1066.55,godrej consumer products,GODREJCP.NS
-175,500164,Godrej Industries Ltd,INE233A01035,503.8,godrej industries,GODREJIND.NS
-176,533150,Godrej Properties Ltd,INE484J01027,1521.35,godrej properties,GODREJPROP.NS
-177,532482,Granules India Ltd,INE101D01020,294.45,granules india,GRANULES.NS
-178,509488,Graphite India Ltd.,INE371A01025,415.15,graphite india,GRAPHITE.NS
-179,500300,Grasim Industries Ltd,INE047A01021,1759.7,grasim industries,GRASIM.NS
-180,500620,Great Eastern Shipping Co Ltd/The,INE017A01032,747.95,great eastern shipping co,GESHIP.NS
-181,506076,Grindwell Norton Ltd,INE536A01023,2162.5,grindwell norton,GRINDWELL.NS
-182,530001,Gujarat Alkalies & Chemicals Ltd.,INE186A01019,680.85,gujarat alkalies,GUJALKALI.NS
-183,524226,Gujarat Ambuja Exports Ltd,INE036B01030,250.1,gujarat ambuja exports,GAEL.NS
-184,542812,Gujarat Fluorochemicals Ltd,INE09N301011,3164.4,gujarat fluorochemicals,FLUOROCHEM.NS
-185,539336,Gujarat Gas Ltd,INE844O01030,473.3,gujarat gas,GUJGASLTD.NS
-186,500670,Gujarat Narmada Valley Fertilizers and Chemicals Limited,INE113A01013,588.5,gujarat narmada valley fertilizers,GNFC.NS
-187,533248,Gujarat Pipavav Port Ltd,INE517F01014,114.25,gujarat pipavav port,GPPL.NS
-188,500690,Gujarat State Fertilisers & Chemicals Ltd,INE026A01025,159.9,gujarat state fertilisers,NA
-189,532702,Gujarat State Petronet Ltd,INE246F01010,297.05,gujarat state petronet,GSPL.NS
-190,543227,Happiest Minds Technologies Ltd,INE419U01012,916.7,happiest minds technologies,HAPPSTMNDS.NS
-191,531531,Hatsun Agro Products Ltd,INE473B01035,922.9,hatsun agro products,NA
-192,517354,Havells India Ltd,INE176B01034,1336.5,havells india,HAVELLS.NS
-193,532281,HCL Technologies Ltd,INE860A01027,1137.55,hcl technologies,HCLTECH.NS
-194,541729,HDFC Asset Management Company Ltd,INE127D01025,1891.1,hdfc asset management company,HDFCAMC.NS
-195,500180,HDFC Bank Ltd,INE040A01034,1603.65,hdfc bank,HDFCBANK.NS
-196,540777,HDFC Life Insurance Company Ltd,INE795G01014,626.45,hdfc life insurance company,HDFCLIFE.NS
-197,509631,HEG Ltd,INE545A01016,1631.65,heg,HEG.NS
-198,500292,HeidelbergCement India Ltd.,INE578A01017,176.2,heidelbergcement india,HEIDELBERG.NS
-199,500182,Hero MotoCorp Ltd,INE158A01026,2782.45,hero motocorp,HEROMOTOCO.NS
-200,500183,HFCL Ltd,INE548A01028,68.54,hfcl,HFCL.NS
-201,524735,Hikal Ltd.,INE475B01022,322.6,hikal,HIKAL.NS
-202,500440,Hindalco Industries Ltd,INE038A01020,426.3,hindalco industries,HINDALCO.NS
-203,541154,Hindustan Aeronautics Ltd,INE066F01012,3892.5,hindustan aeronautics,HAL.NS
-204,513599,Hindustan Copper,INE531E01026,114.5,hindustan copper,HINDCOPPER.NS
-205,500104,Hindustan Petroleum Corp Ltd,INE094A01015,272.85,hindustan petroleum corp,HINDPETRO.NS
-206,500696,Hindustan Unilever Ltd,INE030A01027,2680.65,hindustan unilever,HINDUNILVR.NS
-207,500188,Hindustan Zinc Ltd,INE267A01025,307.0,hindustan zinc,HINDZINC.NS
-208,543187,Hitachi Energy India Ltd,INE07Y701011,4116.6,hitachi energy india,POWERINDIA.BO
-209,522215,HLE Glascoat Ltd,INE461D01028,659.5,hle glascoat,HLEGLAS.NS
-210,543259,Home First Finance Company India Ltd,INE481N01025,826.05,home first finance company india,HOMEFIRST.NS
-211,517174,Honeywell Automation India Ltd,INE671A01010,42443.65,honeywell automation india,HONAUT.NS
-212,540530,Housing and Urban Development Corporation Ltd,INE031A01017,59.36,housing,GHI
-213,500010,Housing Development Finance Corp,INE001A01036,2654.95,housing development finance corp,HDFC.NS
-214,532174,ICICI Bank Ltd,INE090A01021,922.85,icici bank,ICICIBANK.NS
-215,540716,ICICI Lombard General Insurance Company Ltd,INE765G01017,1259.4,icici lombard general insurance company,ICICIGI.NS
-216,540133,ICICI Prudential Life Insurance Company Ltd,INE726G01019,549.05,icici prudential life insurance company,ICICIPRULI.NS
-217,541179,ICICI Securities Ltd,INE763G01038,518.65,icici securities,ISEC.NS
-218,500116,IDBI Bank Ltd,INE008A01015,54.62,idbi bank,IDBI.NS
-219,539437,IDFC First Bank Ltd,INE092T01019,81.27,idfc first bank,IDFCFIRSTB.NS
-220,532659,IDFC Limited,INE043D01016,106.89,idfc limited,IDFC.NS
-221,505726,IFB Industries Ltd,INE559A01017,809.8,ifb industries,IFBIND.NS
-222,532636,IIFL Finance Ltd,INE530B01024,516.65,iifl finance,IIFL.NS
-223,530005,India Cements Ltd,INE383A01012,223.1,india cements,INDIACEM.NS
-224,535789,Indiabulls Housing Finance Limited,INE148I01020,113.1,indiabulls housing finance limited,IBULHSGFIN.NS
-225,532832,Indiabulls Real Estate Ltd,INE069I01010,61.61,indiabulls real estate,IBREALEST.NS
-226,542726,Indiamart Intermesh Limited,INE933S01016,5907.9,indiamart intermesh limited,INDIAMART.NS
-227,532814,Indian Bank,INE562A01011,283.0,indian bank,SOUTHBANK.NS
-228,540750,Indian Energy Exchange Ltd,INE022Q01020,128.7,indian energy exchange,IEX.NS
-229,500850,Indian Hotels Co Ltd,INE053A01029,396.1,indian hotels co,INDHOTEL.NS
-230,530965,Indian Oil Corp Ltd,INE242A01010,91.85,indian oil corp,IOC.NS
-231,532388,Indian Overseas Bank,INE565A01014,24.19,indian overseas bank,IOB.NS
-232,542830,Indian Railway Catering and Tourism Corporation Ltd,INE335Y01020,667.55,indian railway catering,IRCTC.NS
-233,543257,Indian Railway Finance Corporation Limited,INE053F01010,33.0,indian railway finance corporation limited,IRFC.NS
-234,543258,Indigo Paints Ltd,INE09VQ01012,1420.85,indigo paints,INDIGOPNTS.NS
-235,532514,Indraprastha Gas Ltd,INE203G01027,458.85,indraprastha gas,IGL.NS
-236,534816,Indus Towers Ltd,INE121J01017,160.65,indus towers,INDUSTOWER.NS
-237,532187,IndusInd Bank Ltd,INE095A01012,1301.2,indusind bank,INDUSINDBK.NS
-238,539807,Infibeam Avenues Ltd,INE483S01020,15.83,infibeam avenues,INFIBEAM.NS
-239,532777,Info Edge (India) Ltd.,INE663F01024,4438.25,info edge (india),NAUKRI.NS
-240,500209,Infosys Ltd,INE009A01021,1295.25,infosys,INFY
-241,538835,Intellect Design Arena Ltd.,INE306R01017,616.0,intellect design arena,INTELLECT.NS
-242,539448,InterGlobe Aviation Ltd,INE646L01027,2432.7,interglobe aviation,INDIGO.NS
-243,524494,Ipca Laboratories Ltd,INE571A01038,728.8,ipca laboratories,IPCALAB.NS
-244,532947,IRB Infrastructure Developers Ltd,INE821I01022,26.82,irb infrastructure developers,IRB.NS
-245,541956,IRCON International Ltd,INE962Y01021,84.17,ircon international,IRCON.NS
-246,500875,ITC Ltd,INE154A01025,453.5,itc,ITC.NS
-247,523610,ITI Ltd,INE248A01017,108.65,iti,ITI
-248,506943,J.B.Chemicals & Pharmaceuticals Ltd.,INE572A01028,2347.0,j.b.chemicals,JBCHEPHARM.NS
-249,532644,J.K. Cement Ltd.,INE823G01014,3370.55,j.k. cement,JKCEMENT.NS
-250,520051,Jamna Auto Industries Ltd,INE039C01032,96.48,jamna auto industries,JAMNAAUTO.NS
-251,532508,Jindal Stainless Ltd.,INE220G01021,327.65,jindal stainless,JSL.NS
-252,532286,Jindal Steel & Power Ltd,INE749A01030,574.75,jindal steel,JINDALSTEL.NS
-253,531543,Jindal Worldwide Ltd.,INE247D01039,334.65,jindal worldwide,JINDWORLD.NS
-254,500380,JK Lakshmi Cement Ltd,INE786A01032,728.0,jk lakshmi cement,JKLAKSHMI.NS
-255,532162,JK Paper Ltd.,INE789E01012,323.7,jk paper,JKPAPER.NS
-256,523405,JM Financial Ltd,INE780C01023,75.04,jm financial,JMFINANCIL.NS
-257,533148,JSW Energy Ltd,INE121E01018,253.5,jsw energy,JSWENERGY.NS
-258,500228,JSW Steel Ltd,INE019A01038,771.55,jsw steel,JSWSTEEL.NS
-259,533155,Jubilant FoodWorks Ltd,INE797F01020,493.9,jubilant foodworks,JUBLFOOD.NS
-260,543271,Jubilant Ingrevia Limited,INE0BY001018,463.25,jubilant ingrevia limited,JUBLINGREA.NS
-261,530019,Jubilant Pharmova Sciences Ltd,INE700A01033,409.3,jubilant pharmova sciences,NA
-262,535648,Just Dial Ltd,INE599M01018,769.55,just dial,JUSTDIAL.NS
-263,532926,Jyothy Labs Ltd,INE668F01031,213.65,jyothy labs,JYOTHYLAB.NS
-264,500233,Kajaria Ceramics Ltd.,INE217B01036,1289.65,kajaria ceramics,KAJARIACER.NS
-265,522287,Kalpataru Projects International Ltd,INE220B01022,544.4,kalpataru projects international,KPIL.BO
-266,543278,Kalyan Jewellers India Ltd,INE303R01014,132.85,kalyan jewellers india,KALYANKJIL.NS
-267,500165,Kansai Nerolac Paints Ltd.,INE531A01024,459.85,kansai nerolac paints,KANSAINER.NS
-268,532714,KEC International Ltd/India,INE389H01022,570.1,kec international,KEC.NS
-269,517569,KEI Industries Ltd,INE878B01027,2239.15,kei industries,KEI.NS
-270,540680,KIOCL Ltd,INE880L01014,191.5,kiocl,KIOCL.NS
-271,532942,KNR Constructions Ltd,INE634I01029,245.65,knr constructions,KNRCON.NS
-272,500247,Kotak Mahindra Bank Ltd,INE237A01028,1823.95,kotak mahindra bank,KOTAKBANK.NS
-273,542651,KPIT Technologies Ltd,INE04I401011,1072.0,kpit technologies,KPITTECH.NS
-274,532889,KPR Mill Ltd,INE930H01031,637.3,kpr mill,KPRMILL.NS
-275,530813,KRBL Ltd,INE001B01026,351.65,krbl,KRBL.NS
-276,543308,Krishna Institute of Medical Sciences Ltd,INE967H01017,1700.05,krishna institute of medical sciences,KIMS.NS
-277,500249,KSB Ltd,INE999A01015,2179.45,ksb,KSB3.DE
-278,533519,L&T Finance Holdings Ltd,INE498L01015,118.1,l,BZ=F
-279,540115,L&T Technology Services Ltd,INE010V01017,3908.5,l,BZ=F
-280,526947,La Opala Rg Ltd.,INE059D01020,406.5,la opala rg,LAOPALA.NS
-281,500252,Lakshmi Machine Works Ltd,INE269B01029,12815.4,lakshmi machine works,LAXMIMACH.NS
-282,500510,Larsen & Toubro Ltd,INE018A01030,2363.2,larsen,LT.NS
-283,543398,Latent View Analytics Ltd,INE0I7C01011,351.45,latent view analytics,LATENTVIEW.NS
-284,540222,Laurus Labs Ltd,INE947Q01028,364.55,laurus labs,LAURUSLABS.NS
-285,543277,Laxmi Organic Industries Ltd,INE576O01020,266.0,laxmi organic industries,LXCHEM.NS
-286,541233,Lemon Tree Hotels Ltd,INE970X01018,94.69,lemon tree hotels,LEMONTREE.NS
-287,500253,LIC Housing Finance Ltd,INE115A01026,384.35,lic housing finance,LICHSGFIN.NS
-288,543526,Life Insurance Corporation of India,INE0J1Y01017,618.3,life insurance corporation of india,LICI.NS
-289,523457,Linde India Ltd,INE473A01011,4362.55,linde india,LINDEINDIA.NS
-290,512455,Lloyds Metals & Energy Ltd.,INE281B01032,380.65,lloyds metals,LLOYDSME.BO
-291,540005,LTIMindtree Ltd,INE214T01019,5049.7,ltimindtree,LTIM.NS
-292,500257,Lupin Ltd,INE326A01037,825.15,lupin,LUPIN.NS
-293,543287,Macrotech Developers Ltd,INE670K01029,629.95,macrotech developers,LODHA.NS
-294,539957,Mahanagar Gas Ltd,INE002S01010,1031.45,mahanagar gas,MGL.NS
-295,500266,Maharashtra Scooters Ltd.,INE288A01013,5439.55,maharashtra scooters,MAHSCOOTER.NS
-296,532720,Mahindra & Mahindra Financial Services Ltd,INE774D01024,316.4,mahindra,KOTAKBANK.NS
-297,500520,Mahindra & Mahindra Ltd,INE101A01026,1403.3,mahindra,KOTAKBANK.NS
-298,533088,Mahindra Holidays & Resorts India Ltd,INE998I01010,289.6,mahindra holidays,MHRIL.NS
-299,532313,Mahindra Lifespace Developers Ltd,INE813A01018,463.35,mahindra lifespace developers,MAHLIFE.NS
-300,531213,Manappuram Finance Ltd,INE522D01027,127.15,manappuram finance,MANAPPURAM.NS
-301,500109,Mangalore Refinery & Petrochemicals Ltd,INE103A01014,78.7,mangalore refinery,MRPL.NS
-302,531642,Marico Ltd,INE196A01026,535.4,marico,MARICO.NS
-303,532500,Maruti Suzuki India Ltd,INE585B01010,9526.9,maruti suzuki india,MARUTI.NS
-304,540749,MAS Financial Services Ltd,INE348L01012,772.2,mas financial services,MASFIN.NS
-305,523704,Mastek Ltd,INE759A01021,1982.15,mastek,MASTEK.NS
-306,500271,Max Financial Services Ltd,INE180A01020,688.95,max financial services,MFSL.NS
-307,543220,Max Healthcare Institute Ltd,INE027H01010,601.35,max healthcare institute,MAXHEALTH.NS
-308,543237,Mazagon Dock Shipbuilders Ltd,INE249Z01012,1218.0,mazagon dock shipbuilders,MAZDOCK.NS
-309,543427,Medplus Health Services Ltd,INE804L01022,800.35,medplus health services,MEDPLUS.NS
-310,543426,Metro Brands Ltd,INE317I01021,988.8,metro br,METROBRAND.NS
-311,542650,Metropolis Healthcare Ltd,INE112L01020,1374.5,metropolis healthcare,METROPOLIS.NS
-312,538962,Minda Corporation Ltd,INE842C01021,286.15,minda corporation,MINDACORP.NS
-313,541195,Mishra Dhatu Nigam Ltd,INE099Z01011,283.95,mishra dhatu nigam,MIDHANI.NS
-314,513377,MMTC LTD,INE123F01029,32.36,mmtc,MMTC.NS
-315,543498,Motherson Sumi Wiring India Ltd,INE0FS801015,57.76,motherson sumi wiring india,MSUMI.NS
-316,532892,Motilal Oswal Financial Services Ltd,INE338I01027,714.9,motilal oswal financial services,MOTILALOFS.NS
-317,526299,MphasiS Ltd,INE356A01018,1873.1,mphasis,MPHASIS.NS
-318,500290,MRF Ltd,INE883A01011,99735.35,mrf,MRF.NS
-319,534091,Multi Commodity Exchange of India Limited,INE745G01035,1570.2,multi commodity exchange of india limited,MCX.NS
-320,533398,Muthoot Finance Ltd,INE414G01012,1180.65,muthoot finance,MUTHOOTFIN.NS
-321,539551,Narayana Hrudayalaya Ltd,INE410P01011,1006.65,narayana hrudayalaya,NH.NS
-322,524816,Natco Pharma Ltd,INE987B01026,631.25,natco pharma,NATCOPHARM.NS
-323,532234,National Aluminium Co Ltd,INE139A01034,84.6,national aluminium co,NATIONALUM.NS
-324,532504,Navin Fluorine International Ltd.,INE048G01026,4641.2,navin fluorine international,NAVINFLUOR.BO
-325,534309,NBCC (India) Ltd,INE095N01031,41.18,nbcc (india),NBCC.NS
-326,500294,NCC Ltd/India,INE868B01028,120.15,ncc,NCC.NS
-327,505355,Nesco Ltd.,INE317F01035,635.0,nesco,NESCO.NS
-328,500790,Nestle India Ltd,INE239A01016,22784.6,nestle india,NESTLEIND.NS
-329,532798,Network 18 Media & Investments Ltd,INE870H01013,66.53,network 18 media,NETWORK18.NS
-330,533098,NHPC Ltd,INE848E01016,45.54,nhpc,NHPC.NS
-331,540767,Nippon Life India Asset Management Ltd,INE298J01013,245.85,nippon life india asset management,NAM-INDIA.NS
-332,513683,NLC India Ltd,INE589A01014,96.84,nlc india,NLCINDIA.NS
-333,526371,NMDC Ltd,INE584A01023,106.2,nmdc,NMDC.NS
-334,500730,NOCIL Ltd.,INE163A01018,218.95,nocil,NOCIL.NS
-335,532555,NTPC Ltd,INE733E01010,185.7,ntpc,NTPC.NS
-336,543334,Nuvoco Vistas Corporation Ltd,INE118D01016,353.0,nuvoco vistas corporation,NUVOCO.NS
-337,533273,Oberoi Realty Ltd,INE093I01010,1008.4,oberoi realty,OBEROIRLTY.NS
-338,500312,Oil & Natural Gas Corp Ltd,INE213A01029,157.7,oil,CL=F
-339,533106,Oil India Ltd,INE274J01014,253.95,oil india,OIL.NS
-340,543396,One 97 Communications Ltd,INE982J01020,870.75,one 97 communications,PAYTM.NS
-341,532466,Oracle Financial Services Software Ltd,INE881D01027,3866.0,oracle financial services software,OFSS.NS
-342,541301,Orient Electric Ltd,INE142Z01019,244.45,orient electric,ORIENTELEC.NS
-343,532827,Page Industries Ltd,INE761H01022,38824.85,page industries,PAGEIND.NS
-344,500368,Patanjali Foods Limited,INE619A01035,1165.55,patanjali foods limited,PATANJALI.NS
-345,543390,PB Fintech Ltd,INE417T01026,661.15,pb fintech,POLICYBZR.NS
-346,506590,PCBL Ltd,INE602A01031,157.85,pcbl,PCBL.NS
-347,533179,Persistent Systems Ltd,INE262H01013,4939.45,persistent systems,PERSISTENT.NS
-348,532522,Petronet LNG Ltd,INE347G01014,225.85,petronet lng,PETRONET.NS
-349,500680,Pfizer Ltd (India),INE182A01018,3845.65,pfizer,PFE
-350,503100,Phoenix Mills Ltd,INE211B01039,1568.25,phoenix mills,PHOENIXLTD.NS
-351,523642,PI Industries Ltd,INE603J01030,3855.7,pi industries,PIDILITIND.NS
-352,500331,Pidilite Industries Ltd,INE318A01026,2670.95,pidilite industries,PIDILITIND.NS
-353,500302,Piramal Enterprises Ltd,INE140A01024,792.35,piramal enterprises,PEL.NS
-354,543635,Piramal Pharma Ltd,INE0DK501011,93.93,piramal pharma,PPLPHARMA.NS
-355,540173,PNB Housing Finance Ltd,INE572E01012,570.45,pnb housing finance,PNBHOUSING.NS
-356,539150,PNC Infratech Ltd,INE195J01029,332.8,pnc infratech,PNCINFRA.NS
-357,531768,Poly Medicure Ltd,INE205C01021,1145.45,poly medicure,POLYMED.NS
-358,542652,Polycab India Ltd,INE455K01017,3531.45,polycab india,POLYCAB.NS
-359,524051,Polyplex Corp. Ltd.,INE633B01018,1355.5,polyplex corp.,POLYPLEX.NS
-360,524000,Poonawalla Fincorp Ltd,INE511C01022,341.25,poonawalla fincorp,POONAWALLA.NS
-361,532810,Power Finance Corp Ltd,INE134E01011,197.3,power finance corp,PFC.NS
-362,532898,Power Grid Corp of India Ltd,INE752E01010,243.0,power grid corp of india,POWERGRID.NS
-363,522205,Praj Industries Ltd,INE074A01025,393.1,praj industries,PRAJIND.NS
-364,533274,Prestige Estates Projects Ltd,INE811K01011,569.0,prestige estates projects,PRESTIGE.NS
-365,542907,Prince Pipes and Fittings Ltd,INE689W01016,672.1,prince pipes,PRINCEPIPE.NS
-366,500338,Prism Johnson Ltd,INE010A01011,127.75,prism johnson,PRSMJOHNSN.NS
-367,530117,Privi Speciality Chemicals Ltd,INE959A01019,1101.35,privi speciality chemicals,PRIVISCL.NS
-368,500126,Procter & Gamble Health Limited,INE199A01012,5078.6,procter,PG
-369,500459,Procter & Gamble Hygiene & Health Care Ltd,INE179A01014,13918.4,procter,PG
-370,533295,Punjab & Sind Bank,INE608A01012,31.32,punjab,PNB.NS
-371,532461,Punjab National Bank,INE160A01022,51.98,punjab national bank,PNB.NS
-372,532689,PVR INOX Ltd,INE191H01014,1423.5,pvr inox,PVRINOX.NS
-373,539978,Quess Corp Ltd,INE615P01015,434.15,quess corp,QUESS.NS
-374,532497,Radico Khaitan Ltd,INE944F01028,1196.45,radico khaitan,RADICO.NS
-375,542649,Rail Vikas Nigam Ltd,INE415G01027,124.4,rail vikas nigam,RVNL.NS
-376,500339,Rain Industries Limited,INE855B01025,172.75,rain industries limited,RAIN.NS
-377,543524,Rainbow Children's Medicare Ltd,INE961O01016,961.55,rainbow children's medicare,RAINBOW.NS
-378,531500,Rajesh Exports Ltd,INE343B01030,565.95,rajesh exports,RAJESHEXPO.NS
-379,500355,Rallis India Ltd,INE613A01020,193.75,rallis india,RALLIS.NS
-380,500260,Ramco Cements Ltd,INE331A01037,934.4,ramco cements,RAMCOCEM.NS
-381,524230,Rashtriya Chemicals & Fertilizers Ltd.,INE027A01015,108.6,rashtriya chemicals,RCF.NS
-382,520111,Ratnamani Metals & Tubes Ltd,INE703B01027,2325.95,ratnamani metals,RATNAMANI.NS
-383,500330,Raymond Ltd.,INE301A01014,1731.4,raymond,RJF
-384,540065,RBL Bank Ltd,INE976G01028,171.95,rbl bank,RBLBANK.NS
-385,532955,REC Ltd,INE020B01018,153.05,rec,RECAF
-386,532805,Redington Ltd,INE891D01026,187.3,redington,REDINGTON.NS
-387,530517,Relaxo Footwears Ltd,INE131B01039,909.75,relaxo footwears,RELAXO.NS
-388,500325,Reliance Industries Ltd,INE002A01018,2551.5,reliance industries,RELIANCE.NS
-389,543248,Restaurant Brands Asia Ltd,INE07T201019,113.25,restaurant br,QSR
-390,534076,Rhi Magnesita India Ltd,INE743M01012,673.05,rhi magnesita india,RHIM.NS
-391,541556,RITES Ltd,INE320J01015,393.75,rites,RITES.NS
-392,543213,Rossari Biotech Ltd,INE02A801020,848.25,rossari biotech,ROSSARI.NS
-393,543228,Route Mobile Ltd,INE450U01017,1572.45,route mobile,ROUTE.NS
-394,517334,Samvardhana Motherson International Ltd,INE775A01035,81.16,samvardhana motherson international,MOTHERSON.NS
-395,500674,Sanofi India Ltd,INE058A01010,6849.6,sanofi india,SANOFI.NS
-396,543397,Sapphire Food India Ltd,INE806T01012,1374.15,sapphire food india,SAPPHIRE.NS
-397,532163,Saregama India Ltd,INE979A01025,340.55,saregama india,SAREGAMA.NS
-398,543066,SBI Cards and Payment Services Limited,INE018E01016,905.5,sbi cards,SBICARD.NS
-399,540719,SBI Life Insurance Company Ltd,INE123W01016,1280.7,sbi life insurance company,SBILIFE.NS
-400,505790,Schaeffler India Ltd,INE513A01022,3186.85,schaeffler india,SCHAEFFLER.NS
-401,540203,Sheela Foam Ltd,INE916U01025,1197.6,sheela foam,SFL.NS
-402,532638,Shoppers Stop Ltd,INE498B01024,804.15,shoppers stop,SHOPERSTOP.NS
-403,500387,Shree Cement Ltd,INE070A01015,25977.45,shree cement,SHREECEM.NS
-404,532670,Shree Renuka Sugars Ltd,INE087H01022,43.34,shree renuka sugars,RENUKA.NS
-405,511218,Shriram Finance Ltd,INE721A01013,1469.6,shriram finance,SHRIRAMFIN.NS
-406,543299,Shyam Metalics and Energy Ltd,INE810G01011,349.55,shyam metalics,SHYAMMETL.NS
-407,500550,Siemens India Ltd,INE003A01024,3806.1,siemens india,SIEMENS.NS
-408,540673,SIS Limited,INE285J01028,406.1,sis limited,SIS.NS
-409,533206,SJVN Ltd,INE002L01015,38.5,sjvn,SJVN.NS
-410,500472,SKF India Ltd,INE640A01023,4795.95,skf india,SKFINDIA.NS
-411,532784,Sobha Limited,INE671H01015,550.15,sobha limited,SOBHA.NS
-412,532725,Solar Industries India Ltd,INE343H01029,3831.3,solar industries india,SOLARINDS.NS
-413,543300,Sona BLW Precision Forgings Ltd,INE073K01018,522.1,sona blw precision forgings,SONACOMS.NS
-414,532221,Sonata Software Ltd,INE269A01021,1015.5,sonata software,SONATSOFTW.NS
-415,503806,SRF Ltd,INE647A01010,2404.7,srf,SRF.NS
-416,540575,Star Cement Ltd,INE460H01021,143.6,star cement,STARCEMENT.NS
-417,543412,Star Health and Allied Insurance Company Ltd,INE575P01011,541.5,star health,STARHEALTH.NS
-418,500112,State Bank of India,INE062A01020,568.8,state bank of india,SBIN.NS
-419,500113,Steel Authority of India Ltd,INE114A01011,85.9,steel authority of india,SAIL.NS
-420,542760,Sterling and Wilson Renewable Energy Ltd,INE00M201021,305.45,sterling,STRL
-421,532374,Sterlite Technologies Ltd.,INE089C01029,151.5,sterlite technologies,STLTECH.NS
-422,542920,Sumitomo Chemical India Ltd,INE258G01013,428.15,sumitomo chemical india,SUMICHEM.NS
-423,532872,Sun Pharma Advanced Research Co Ltd,INE232I01014,196.4,sun pharma advanced research co,SPARC.NS
-424,524715,Sun Pharmaceutical Industries Ltd,INE044A01036,1001.25,sun pharmaceutical industries,SUNPHARMA.NS
-425,532733,Sun TV Network Ltd,INE424H01027,442.9,sun tv network,SUNTV.NS
-426,520056,Sundaram Clayton Ltd,INE105A01035,4777.25,sundaram clayton,SUNCLAYLTD.NS
-427,500403,Sundaram Fastners,INE387A01021,1193.0,sundaram fastners,NA
-428,512179,Sunteck Realty Ltd,INE805D01034,283.65,sunteck realty,SUNTECK.NS
-429,509930,Supreme Industries,INE195A01028,2990.65,supreme industries,SUPREMEIND.NS
-430,500405,Supreme Petrochem Ltd.,INE663A01033,412.45,supreme petrochem,SPLPETRO.NS
-431,543064,Suven Pharmaceuticals Limited,INE03QK01018,486.45,suven pharmaceuticals limited,SUVENPHAR.NS
-432,532667,Suzlon Energy Ltd,INE040H01021,14.53,suzlon energy,SUZLON.NS
-433,503310,Swan Energy Ltd.,INE665A01038,234.2,swan energy,SWANENERGY.BO
-434,517385,Symphony Ltd,INE225D01027,910.05,symphony,SIHL.L
-435,539268,Syngene International Ltd,INE398R01022,742.95,syngene international,SYNGENE.NS
-436,543596,Tamilnad Mercantile Bank Ltd,INE668A01016,425.85,tamilnad mercantile bank,TMB.NS
-437,532790,Tanla Platforms Ltd,INE483C01032,1029.3,tanla platforms,TANLA.NS
-438,500770,Tata Chemicals Ltd,INE092A01019,978.95,tata chemicals,TATACHEM.NS
-439,532301,Tata Coffee Ltd.,INE493A01027,248.5,tata coffee,TATACOFFEE.NS
-440,500483,Tata Communications Ltd,INE151A01013,1590.65,tata communications,TATACOMM.NS
-441,532540,Tata Consultancy Services Ltd,INE467B01029,3209.65,tata consultancy services,TCS.NS
-442,500800,Tata Consumer Products Ltd,INE192A01025,856.75,tata consumer products,TATACONSUM.NS
-443,500408,Tata Elxsi Ltd,INE670A01012,7682.5,tata elxsi,TATAELXSI.NS
-444,501301,Tata Investment Corp Ltd,INE672A01018,2413.4,tata investment corp,TATAINVEST.NS
-445,500570,Tata Motors Ltd,INE155A01022,565.75,tata motors,TATAMOTORS.NS
-446,570001,Tata Motors Ltd DVR,IN9155A01020,311.0,tata motors,TATAMOTORS.NS
-447,500400,Tata Power Co Ltd,INE245A01021,223.15,tata power co,TATAPOWER.NS
-448,500470,Tata Steel Ltd,INE081A01020,114.0,tata steel,TATASTEEL.NS
-449,532371,Tata Teleservices Maharashtra Ltd,INE517B01013,75.92,tata teleservices maharashtra,TTML.NS
-450,540212,TCI Express Ltd,INE586V01016,1636.95,tci express,TCIEXP.NS
-451,539658,TeamLease Services Ltd,INE985S01024,2406.8,teamlease services,TEAMLEASE.NS
-452,532755,Tech Mahindra Ltd,INE669C01036,1093.2,tech mahindra,TECHM.NS
-453,540595,Tejas Networks Ltd,INE010J01012,711.05,tejas networks,TEJASNET.NS
-454,540769,The New India Assurance Company Ltd,INE470Y01017,121.85,the new india assurance company,NIACL.NS
-455,500411,Thermax Ltd,INE152A01029,2383.65,thermax,THERMAX.NS
-456,522113,Timken India Ltd.,INE325A01013,3485.5,timken india,TIMKEN.NS
-457,500114,Titan Co Ltd,INE280A01028,2969.55,titan co,TITAN.NS
-458,500420,Torrent Pharmaceuticals Ltd,INE685A01028,1857.95,torrent pharmaceuticals,TORNTPHARM.NS
-459,532779,Torrent Power Ltd,INE813H01021,673.05,torrent power,TORNTPOWER.NS
-460,500251,Trent Ltd.,INE849A01020,1706.1,trent,TRENT.NS
-461,521064,Trident Ltd.,INE064C01022,33.36,trident,TRIDENT.NS
-462,533655,Triveni Turbine Limited,INE152M01016,408.05,triveni turbine limited,TRITURBINE.NS
-463,517506,TTK Prestige Ltd,INE690A01028,747.65,ttk prestige,TTKPRESTIG.NS
-464,540762,Tube Investments Of India,INE974X01010,2974.6,tube investments of india,TIINDIA.NS
-465,532800,TV18 Broadcast Ltd,INE886H01027,40.23,tv18 broadcast,TV18BRDCST.NS
-466,532343,TVS Motor Co Ltd,INE494B01023,1337.85,tvs motor co,TVSMOTOR.NS
-467,532505,UCO Bank,INE691A01018,26.71,uco bank,UCOBANK.NS
-468,500148,Uflex Ltd,INE516A01017,425.5,uflex,UFLEX.NS
-469,532538,UltraTech Cement Ltd,INE481G01011,8267.45,ultratech cement,ULTRACEMCO.NS
-470,532477,Union Bank of India,INE692A01016,71.52,union bank of india,UNIONBANK.NS
-471,532478,United Breweries Ltd,INE686F01025,1493.45,united breweries,UBL.NS
-472,532432,United Spirits Ltd,INE854D01024,898.75,united spirits,MCDOWELL-N.NS
-473,532539,UNO Minda Ltd,INE405E01023,585.25,uno minda,UNOMINDA.NS
-474,512070,UPL Ltd,INE628A01036,685.75,upl,UPLD
-475,543238,UTI Asset Management Company Ltd,INE094J01016,686.3,uti asset management company,UTIAMC.NS
-476,532953,V-Guard Industries Ltd,INE951I01027,257.05,v-guard industries,VGUARD.NS
-477,534976,V-Mart Retail Limited,INE665J01013,2105.05,v-mart retail limited,VMART.NS
-478,532156,Vaibhav Global Ltd,INE884A01027,312.65,vaibhav global,VAIBHAVGBL.NS
-479,502986,Vardhman Textiles Ltd.,INE825A01020,359.05,vardhman textiles,VTL.NS
-480,541578,Varroc Engineering Ltd,INE665L01035,330.15,varroc engineering,VARROC.NS
-481,540180,Varun Beverages Ltd,INE200M01021,801.6,varun beverages,VBL.NS
-482,543463,Vedant Fashions Ltd,INE825V01034,1340.1,vedant fashions,MANYAVAR.NS
-483,500295,Vedanta Ltd,INE205A01025,280.5,vedanta,VEDL.NS
-484,524200,Vinati Organics Ltd,INE410B01037,1840.65,vinati organics,VINATIORGA.NS
-485,507880,VIP Industries Ltd,INE054A01027,653.35,vip industries,VIPIND.NS
-486,532822,Vodafone Idea Ltd,INE669E01016,7.64,vodafone idea,IDEA.NS
-487,500575,Voltas Ltd,INE226A01021,789.35,voltas,VOLTAS.NS
-488,509966,VST Industries Ltd.,INE710A01016,3439.65,vst industries,VSTIND.NS
-489,532144,Welspun Corp Ltd,INE191B01025,265.65,welspun corp,WELCORP.NS
-490,514162,Welspun India Ltd.,INE192B01031,92.61,welspun india,WELSPUNIND.NS
-491,505533,Westlife Development Ltd,INE274F01020,853.9,westlife development,WESTLIFE.NS
-492,500238,Whirlpool of India Ltd,INE716A01013,1451.0,whirlpool of india,WHIRLPOOL.NS
-493,507685,Wipro Ltd,INE075A01022,380.05,wipro,WIT
-494,532648,Yes Bank Ltd,INE528G01035,16.23,yes bank,YESBANK.NS
-495,505537,Zee Entertainment Enterprises Ltd,INE256A01028,185.3,zee entertainment enterprises,ZEEL.NS
-496,504067,Zensar Technologies Ltd,INE520A01027,390.75,zensar technologies,ZENSARTECH.NS
-497,533023,ZF Commercial Vehicle Control Systems India Ltd,INE342J01019,11989.85,zf commercial vehicle control systems india,ZFCVINDIA.NS
-498,543320,Zomato Ltd,INE758T01015,75.83,zomato,ZOMATO.NS
-499,532321,Zydus Lifesciences Ltd,INE010B01027,554.35,zydus lifesciences,ZYDUSLIFE.NS
-500,531335,Zydus Wellness Ltd,INE768C01010,1497.6,zydus wellness,ZYDUSWELL.NS
+Scrip Code,COMPANY,ISIN No.,Close Price,TICKER
+542772,360 ONE WAM Ltd,INE466L01038,441.9,360ONE.BO
+523395,3M India Ltd,INE470A01017,27827.1,3MINDIA.BO
+524348,Aarti Drugs Ltd,INE767A01016,466.1,AARTIDRUGS.BO
+524208,Aarti Industries Ltd.,INE769A01020,519.95,AARTIIND.BO
+541988,AAVAS Financiers Ltd,INE216P01012,1373.3,AAVAS.BO
+500002,ABB India Ltd,INE117A01022,4328.2,ABB.BO
+500488,Abbott India Ltd,INE358A01014,23074.0,ABBOTINDIA.BO
+500410,ACC Ltd,INE012A01025,1825.4,ACC.BO
+512599,Adani Enterprises Ltd,INE423A01024,2403.8,ADANIENT.BO
+541450,Adani Green Energy Ltd,INE364U01010,960.4,ADANIGREEN.BO
+532921,Adani Ports and Special Economic Zone,INE742F01042,736.05,ADANIPORTS.BO
+533096,Adani Power Ltd,INE814H01011,263.7,ADANIPOWER.BO
+542066,Adani Total Gas Limited,INE399L01023,657.7,ATGL.BO
+539254,Adani Transmission Ltd,INE931S01010,806.75,ADANITRANS.BO
+543458,Adani Wilmar Ltd,INE699H01024,419.3,AWL.BO
+540691,Aditya Birla Capital Ltd,INE674K01013,179.4,ABCAPITAL.BO
+535755,Aditya Birla Fashion and Retail Ltd,INE647O01011,213.4,ABFRL.BO
+543374,Aditya Birla Sun Life AMC LTd,INE404A01024,368.35,ABSLAMC.BO
+500003,Aegis Logistics Ltd,INE208C01025,346.65,AEGISCHEM.BO
+543534,Aether Industries Ltd,INE0BWX01014,998.6,AETHER.BO
+542752,Affle (India) Ltd,INE00WC01027,1023.3,AFFLE.BO
+532683,AIA Engineering Ltd,INE212H01026,3402.45,AIAENG.BO
+532331,Ajanta Pharma Ltd,INE031B01049,1474.05,AJANTPHARM.BO
+500710,Akzo Nobel India Ltd,INE133A01011,2449.2,AKZOINDIA.BO
+533573,Alembic Pharmaceuticals Ltd,INE901L01018,611.9,APLLTD.BO
+539523,Alkem Laboratories Ltd,INE540L01014,3403.9,ALKEM.BO
+506767,Alkyl Amines Chemicals Ltd,INE150B01039,2721.8,ALKYLAMINE.BO
+521070,Alok Industries Ltd,INE270A01029,17.01,ALOKINDS.BO
+500008,Amara Raja Batteries Ltd,INE885A01032,636.6,AMARAJABAT.BO
+540902,Amber Enterprises India Ltd,INE371P01015,2105.95,AMBER.BO
+500425,Ambuja Cements Ltd,INE079A01024,452.55,AMBUJACEM.BO
+543235,Angel One Limited,INE732I01013,1558.65,ANGELONE.BO
+543275,Anupam Rasayan India Ltd,INE930P01018,1080.75,ANURAS.BO
+532259,Apar Industries Ltd,INE372A01015,3099.0,APARINDS.BO
+533758,APL Apollo Tubes Ltd,INE702C01027,1323.6,APLAPOLLO.BO
+508869,Apollo Hospitals Enterprise Ltd,INE437A01024,5142.95,APOLLOHOSP.BO
+500877,Apollo Tyres Ltd,INE438A01022,406.95,APOLLOTYRE.BO
+543335,Aptus Value Housing Finance India Ltd,INE852O01025,267.55,APTUS.BO
+543657,Archean Chemical Industries Ltd,INE128X01021,557.35,ACI.BO
+515030,Asahi India Glass Ltd,INE439A01020,490.4,ASAHIINDIA.BO
+500477,Ashok Leyland Ltd,INE208A01029,167.95,ASHOKLEY.BO
+500820,Asian Paints Ltd,INE021A01026,3309.85,ASIANPAINT.BO
+540975,Aster DM Healthcare Ltd,INE914M01019,287.2,ASTERDM.BO
+532830,ASTRAL LIMITED,INE006I01046,1970.5,ASTRAL.BO
+506820,AstraZeneca Pharm India,INE203A01020,3624.55,ASTRAZEN.BO
+500027,Atul Ltd.,INE100A01010,7018.55,ATUL.BO
+540611,AU Small Finance Bank Ltd,INE949L01017,772.75,AUBANK.BO
+524804,Aurobindo Pharma Ltd,INE406A01037,677.6,AUROPHARMA.BO
+512573,Avanti Feeds Ltd,INE871C01038,388.25,
+540376,Avenue Supermarts Ltd,INE192R01011,3973.9,DMART.BO
+532215,Axis Bank Ltd,INE238A01034,965.75,AXISBANK.BO
+532977,Bajaj Auto Ltd,INE917I01010,4596.9,BAJAJ-AUTO.BO
+500031,Bajaj Electricals Ltd,INE193E01025,1231.5,BAJAJELEC.BO
+500034,Bajaj Finance Ltd,INE296A01024,7384.95,BAJFINANCE.BO
+532978,Bajaj Finserv Ltd,INE918I01026,1541.9,BAJAJFINSV.BO
+500490,Bajaj Holdings and Investment Ltd,INE118A01012,6983.05,BAJAJHLDNG.BO
+530999,Balaji Amines Ltd,INE050E01027,2369.65,BALAMINES.BO
+502355,Balkrishna Industries Ltd,INE787D01026,2346.0,BALKRISIND.BO
+500038,Balrampur Chini Mills Ltd,INE119A01028,395.1,BALRAMCHIN.BO
+541153,Bandhan Bank Ltd,INE545U01014,249.9,BANDHANBNK.BO
+532134,Bank of Baroda,INE028A01039,193.7,BANKBARODA.BO
+532149,Bank of India,INE084A01016,75.1,BANKINDIA.BO
+532525,Bank Of Maharashtra,INE457A01014,27.87,MAHABANK.BO
+500042,BASF India Limited,INE373A01013,2554.5,BASF.BO
+500043,Bata India Ltimited,INE176A01028,1626.4,BATAINDIA.BO
+506285,Bayer CropScience Ltd/India,INE462A01022,4263.85,BAYERCROP.BO
+509480,Berger Paints India Ltd,INE463A01038,675.85,BERGEPAINT.BO
+541143,Bharat Dynamics Ltd,INE171Z01018,1197.45,BDL.BO
+500049,Bharat Electronics Ltd,INE263A01024,124.8,BEL.BO
+500493,Bharat Forge Ltd,INE465A01025,825.35,BHARATFORG.BO
+500103,Bharat Heavy Electricals Ltd,INE257A01026,87.35,BHEL.BO
+500547,Bharat Petroleum Corp Ltd,INE029A01011,374.95,BPCL.BO
+532454,Bharti Airtel Ltd,INE397D01024,828.05,BHARTIARTL.BO
+543653,Bikaji Foods International Ltd,INE00E101023,414.8,BIKAJI.BO
+532523,Biocon Ltd,INE376G01013,244.8,BIOCON.BO
+500335,Birla Corp Ltd,INE340A01012,1192.6,BIRLACORPN.BO
+532400,Birlasoft Ltd,INE836A01035,335.55,BSOFT.BO
+526612,Blue Dart Express Ltd,INE233B01017,6644.15,BLUEDART.BO
+500067,Blue Star Ltd,INE472A01039,1525.35,BLUESTARCO.BO
+501425,Bombay Burmah Trading Corp Ltd.,INE050A01025,1046.3,BBTC.BO
+502219,Borosil Renewables Ltd,INE666D01022,548.6,BORORENEW.BO
+500530,Bosch Ltd,INE323A01026,18955.3,BOSCHLTD.BO
+532929,Brigade Enterprises Ltd,INE791I01019,596.75,BRIGADE.BO
+500825,Britannia Industries Ltd.,INE216A01030,5016.1,BRITANNIA.BO
+543425,C.E. Info Systems Ltd,INE0BV301023,1165.5,MAPMYINDIA.BO
+543523,Campus Activewear Ltd,INE278Y01022,323.65,CAMPUS.BO
+511196,Can Fin Homes Ltd,INE477A01020,744.85,CANFINHOME.BO
+532483,Canara Bank,INE476A01014,304.95,CANBK.BO
+524742,Caplin Point Laboratories Ltd,INE475E01026,812.75,
+531595,Capri Global Capital  LTD,INE180C01026,749.35,CGCL.BO
+513375,Carborundum Universal Ltd,INE120A01034,1216.05,CARBORUNIV.BO
+500870,Castrol India Ltd,INE172A01027,121.9,CASTROLIND.BO
+519600,CCL Products (India) Ltd.,INE421D01022,659.35,CCL.BO
+500878,CEAT Ltd,INE482A01020,2045.55,CEATLTD.BO
+532885,Central Bank of India,INE483A01010,27.52,CENTRALBK.BO
+532548,Century Plyboards India Ltd,INE348B01021,618.25,CENTURYPLY.BO
+500040,Century Textile & Industries Ltd,INE055A01016,814.1,CENTURYTEX.BO
+532443,Cera Sanitaryware Ltd,INE739E01017,7907.4,CERA.BO
+500084,CESC Ltd,INE486A01021,72.01,CESC.BO
+500093,CG Power and Industrial Solutions Ltd,INE067A01029,363.7,CGPOWER.BO
+542399,Chalet Hotels Ltd,INE427F01016,419.2,CHALET.BO
+500085,Chambal Fertilizers & Chemicals Ltd,INE085A01013,278.35,CHAMBLFERT.BO
+543336,Chemplast Sanmar Ltd,INE488A01050,452.7,CHEMPLASTS.BO
+504973,Cholamandalam Financial Holdings Ltd,INE149A01033,935.85,CHOLAHLDNG.BO
+511243,Cholamandalam Investment & Finance Co. Ltd.,INE121A01024,1132.5,CHOLAFIN.BO
+532756,CIE Automotive India Ltd,INE536H01010,525.75,CIEINDIA.BO
+500087,Cipla Ltd/India,INE059A01026,1011.55,CIPLA.BO
+532210,City Union Bank Ltd.,INE491A01021,124.3,CUB.BO
+543318,Clean Science and Technology Ltd,INE227W01023,1383.85,CLEAN.BO
+533278,Coal India Ltd,INE522F01014,227.3,COALINDIA.BO
+540678,Cochin Shipyard Ltd,INE704P01017,593.1,COCHINSHIP.BO
+532541,Coforge Ltd,INE591G01017,4562.55,COFORGE.BO
+500830,Colgate-Palmolive India Ltd,INE259A01022,1648.95,COLPAL.BO
+543232,Computer Age Management Services Ltd,INE596I01012,2180.45,CAMS.BO
+531344,Container Corp Of India,INE111A01025,660.7,CONCOR.BO
+506395,Coromandel International Ltd,INE169A01031,940.55,COROMANDEL.BO
+541770,CreditAccess Grameen Ltd,INE741K01010,1272.85,CREDITACC.BO
+500092,CRISIL Ltd,INE007A01025,3915.2,CRISIL.BO
+539876,Crompton Greaves Consumer Electricals Ltd,INE299U01018,290.05,CROMPTON.BO
+542867,CSB Bank Ltd,INE679A01013,266.9,CSBBANK.BO
+500480,Cummins India Ltd,INE298A01020,1876.6,CUMMINSIND.BO
+532175,Cyient Ltd,INE136B01020,1513.15,CYIENT.BO
+500096,Dabur India Ltd,INE016A01026,569.2,DABUR.BO
+542216,Dalmia Bharat Ltd,INE00R701025,2241.15,DALBHARAT.BO
+523367,DCM Shriram Ltd,INE499A01024,859.85,DCMSHRIRAM.BO
+500645,Deepak Fertilisers & Petrochemicals Corp. Ltd.,INE501A01019,564.55,DEEPAKFERT.BO
+506401,Deepak Nitrite Limited,INE288B01029,2174.8,
+543529,Delhivery Limited,INE148O01028,391.6,DELHIVERY.BO
+532848,Delta Corp. Ltd.,INE124G01033,248.25,DELTACORP.BO
+543330,Devyani International Ltd,INE872J01023,194.75,DEVYANI.BO
+532488,Divi's Laboratories Ltd,INE361B01024,3583.75,DIVISLAB.BO
+540699,Dixon Technologies (India) Ltd,INE935N01020,4654.8,DIXON.BO
+532868,DLF Ltd,INE271C01023,485.1,DLF.BO
+500124,Dr Reddy's Laboratories Ltd,INE089A01023,4873.5,DRREDDY.BO
+539524,Dr. Lal PathLabs Ltd,INE600L01024,2121.25,LALPATHLAB.BO
+543272,Easy Trip Planners Ltd,INE07O001026,43.42,EASEMYTRIP.BO
+532927,eClerx Services Ltd,INE738I01010,1773.25,ECLERX.BO
+505200,Eicher Motors Ltd,INE066A01021,3494.55,EICHERMOT.BO
+500125,EID Parry India Ltd,INE126A01031,470.0,EIDPARRY.BO
+500840,EIH Ltd,INE230A01023,212.3,EIHOTEL.BO
+522074,Elgi Equipments Ltd.,INE285A01027,533.7,ELGIEQUIP.BO
+531162,Emami Ltd,INE548C01032,416.5,EMAMILTD.BO
+540153,Endurance Technologies Ltd,INE913H01037,1586.9,ENDURANCE.BO
+532178,Engineers India Ltd,INE510A01028,113.7,ENGINERSIN.BO
+500135,EPL Ltd,INE255A01020,204.1,EPL.BO
+543243,Equitas Small Finance Bank Ltd,INE063P01018,87.99,EQUITASBNK.BO
+540596,Eris Lifesciences Ltd,INE406M01024,676.8,ERIS.BO
+500133,Esab India Ltd,INE284A01012,3991.35,ESABINDIA.BO
+500495,Escorts Ltd,INE042A01014,2196.8,ESCORTS.BO
+543482,Eureka Forbes Limited,INE0KCE01017,580.5,
+500086,Exide Industries Ltd,INE302A01020,213.2,EXIDEIND.BO
+531599,FDC Ltd,INE258B01022,308.6,FDC.BO
+500469,Federal Bank Ltd,INE171A01029,123.1,FEDERALBNK.BO
+541557,Fine Organic Industries Ltd,INE686Y01026,4904.4,FINEORG.BO
+500144,Finolex Cables Ltd,INE235A01022,855.55,FINCABLES.BO
+500940,Finolex Industries Ltd,INE183A01024,175.4,FINPIPE.BO
+532809,Firstsource Solutions Ltd,INE684F01012,129.9,FSL.BO
+543663,Five-Star Business Finance Ltd,INE128S01021,651.15,FIVESTAR.BO
+532843,Fortis Healthcare Ltd.,INE061F01013,306.25,FORTIS.BO
+543384,FSN E-Commerce Ventures Ltd,INE388Y01029,150.45,NYKAA.BO
+543317,G R Infraprojects Ltd,INE201P01022,1248.65,GRINFRA.BO
+532155,Gail India Ltd,INE129A01019,108.0,GAIL.BO
+540935,Galaxy Surfactants Ltd,INE600K01018,2846.5,GALAXYSURF.BO
+509557,Garware Technical Fibres Ltd,INE276A01018,3181.8,GARFIBRES.BO
+540755,General Insurance Corporation of India,INE481Y01014,188.1,GICRE.BO
+507815,Gillette India Ltd,INE322A01010,4514.0,GILLETTE.BO
+543245,Gland Pharma Ltd,INE068V01023,1023.65,GLAND.BO
+500660,GlaxoSmithKline Pharmaceuticals Ltd,INE159A01016,1414.6,GLAXO.BO
+532296,Glenmark Pharmaceuticals Ltd,INE935A01035,640.65,GLENMARK.BO
+543654,Global Health Ltd,INE474Q01031,637.85,MEDANTA.BO
+505255,GMM Pfaudler Limited,INE541A01023,1512.45,
+532754,GMR Airports Infrastructure Ltd,INE776C01039,42.6,GMRINFRA.BO
+500163,Godfrey Phillips India Ltd,INE260B01028,1717.0,GODFRYPHLP.BO
+540743,Godrej Agrovet Ltd,INE850D01014,455.45,GODREJAGRO.BO
+532424,Godrej Consumer Products Ltd,INE102D01028,1066.55,GODREJCP.BO
+500164,Godrej Industries Ltd,INE233A01035,503.8,GODREJIND.BO
+533150,Godrej Properties Ltd,INE484J01027,1521.35,GODREJPROP.BO
+532482,Granules India Ltd,INE101D01020,294.45,GRANULES.BO
+509488,Graphite India Ltd.,INE371A01025,415.15,GRAPHITE.BO
+500300,Grasim Industries Ltd,INE047A01021,1759.7,GRASIM.BO
+500620,Great Eastern Shipping Co Ltd/The,INE017A01032,747.95,GESHIP.BO
+506076,Grindwell Norton Ltd,INE536A01023,2162.5,GRINDWELL.BO
+530001,Gujarat Alkalies & Chemicals Ltd.,INE186A01019,680.85,GUJALKALI.BO
+524226,Gujarat Ambuja Exports Ltd,INE036B01030,250.1,GAEL.BO
+542812,Gujarat Fluorochemicals Ltd,INE09N301011,3164.4,FLUOROCHEM.BO
+539336,Gujarat Gas Ltd,INE844O01030,473.3,GUJGASLTD.BO
+500670,Gujarat Narmada Valley Fertilizers and Chemicals Limited,INE113A01013,588.5,GNFC.BO
+533248,Gujarat Pipavav Port Ltd,INE517F01014,114.25,GPPL.BO
+500690,Gujarat State Fertilisers & Chemicals Ltd,INE026A01025,159.9,GSFC.BO
+532702,Gujarat State Petronet Ltd,INE246F01010,297.05,GSPL.BO
+543227,Happiest Minds Technologies Ltd,INE419U01012,916.7,HAPPSTMNDS.BO
+531531,Hatsun Agro Products Ltd,INE473B01035,922.9,HATSUN.BO
+517354,Havells India Ltd,INE176B01034,1336.5,HAVELLS.BO
+532281,HCL Technologies Ltd,INE860A01027,1137.55,HCLTECH.BO
+541729,HDFC Asset Management Company Ltd,INE127D01025,1891.1,HDFCAMC.BO
+500180,HDFC Bank Ltd,INE040A01034,1603.65,HDFCBANK.BO
+540777,HDFC Life Insurance Company Ltd,INE795G01014,626.45,HDFCLIFE.BO
+509631,HEG Ltd,INE545A01016,1631.65,HEG.BO
+500292,HeidelbergCement India Ltd.,INE578A01017,176.2,HEIDELBERG.BO
+500182,Hero MotoCorp Ltd,INE158A01026,2782.45,HEROMOTOCO.BO
+500183,HFCL Ltd,INE548A01028,68.54,HFCL.BO
+524735,Hikal Ltd.,INE475B01022,322.6,HIKAL.BO
+500440,Hindalco Industries Ltd,INE038A01020,426.3,HINDALCO.BO
+541154,Hindustan Aeronautics Ltd,INE066F01012,3892.5,HAL.BO
+513599,Hindustan Copper,INE531E01026,114.5,HINDCOPPER.BO
+500104,Hindustan Petroleum Corp Ltd,INE094A01015,272.85,HINDPETRO.BO
+500696,Hindustan Unilever Ltd,INE030A01027,2680.65,HINDUNILVR.BO
+500188,Hindustan Zinc Ltd,INE267A01025,307.0,HINDZINC.BO
+543187,Hitachi Energy India Ltd,INE07Y701011,4116.6,POWERINDIA.BO
+522215,HLE Glascoat Ltd,INE461D01028,659.5,HLEGLAS.BO
+543259,Home First Finance Company India Ltd,INE481N01025,826.05,HOMEFIRST.BO
+517174,Honeywell Automation India Ltd,INE671A01010,42443.65,HONAUT.BO
+540530,Housing and Urban Development Corporation Ltd,INE031A01017,59.36,HUDCO.BO
+500010,Housing Development Finance Corp,INE001A01036,2654.95,HDFC.BO
+532174,ICICI Bank Ltd,INE090A01021,922.85,ICICIBANK.BO
+540716,ICICI Lombard General Insurance Company Ltd,INE765G01017,1259.4,ICICIGI.BO
+540133,ICICI Prudential Life Insurance Company Ltd,INE726G01019,549.05,ICICIPRULI.BO
+541179,ICICI Securities Ltd,INE763G01038,518.65,ISEC.BO
+500116,IDBI Bank Ltd,INE008A01015,54.62,IDBI.BO
+539437,IDFC First Bank Ltd,INE092T01019,81.27,IDFCFIRSTB.BO
+532659,IDFC Limited,INE043D01016,106.89,IDFC.BO
+505726,IFB Industries Ltd,INE559A01017,809.8,IFBIND.BO
+532636,IIFL Finance Ltd,INE530B01024,516.65,IIFL.BO
+530005,India Cements Ltd,INE383A01012,223.1,INDIACEM.BO
+535789,Indiabulls Housing Finance Limited,INE148I01020,113.1,IBULHSGFIN.BO
+532832,Indiabulls Real Estate Ltd,INE069I01010,61.61,IBREALEST.BO
+542726,Indiamart Intermesh Limited,INE933S01016,5907.9,INDIAMART.BO
+532814,Indian Bank,INE562A01011,283.0,INDIANB.BO
+540750,Indian Energy Exchange Ltd,INE022Q01020,128.7,IEX.BO
+500850,Indian Hotels Co Ltd,INE053A01029,396.1,INDHOTEL.BO
+530965,Indian Oil Corp Ltd,INE242A01010,91.85,IOC.BO
+532388,Indian Overseas Bank,INE565A01014,24.19,IOB.BO
+542830,Indian Railway Catering and Tourism Corporation Ltd,INE335Y01020,667.55,IRCTC.BO
+543257,Indian Railway Finance Corporation Limited,INE053F01010,33.0,IRFC.BO
+543258,Indigo Paints Ltd,INE09VQ01012,1420.85,INDIGOPNTS.BO
+532514,Indraprastha Gas Ltd,INE203G01027,458.85,IGL.BO
+534816,Indus Towers Ltd,INE121J01017,160.65,INDUSTOWER.BO
+532187,IndusInd Bank Ltd,INE095A01012,1301.2,INDUSINDBK.BO
+539807,Infibeam Avenues Ltd,INE483S01020,15.83,INFIBEAM.BO
+532777,Info Edge (India) Ltd.,INE663F01024,4438.25,NAUKRI.BO
+500209,Infosys Ltd,INE009A01021,1295.25,INFY.BO
+538835,Intellect Design Arena Ltd.,INE306R01017,616.0,INTELLECT.BO
+539448,InterGlobe Aviation Ltd,INE646L01027,2432.7,INDIGO.BO
+524494,Ipca Laboratories Ltd,INE571A01038,728.8,IPCALAB.BO
+532947,IRB Infrastructure Developers Ltd,INE821I01022,26.82,IRB.BO
+541956,IRCON International Ltd,INE962Y01021,84.17,IRCON.BO
+500875,ITC Ltd,INE154A01025,453.5,ITC.BO
+523610,ITI Ltd,INE248A01017,108.65,ITI.BO
+506943,J.B.Chemicals & Pharmaceuticals Ltd.,INE572A01028,2347.0,JBCHEPHARM.BO
+532644,J.K. Cement Ltd.,INE823G01014,3370.55,JKCEMENT.BO
+520051,Jamna Auto Industries Ltd,INE039C01032,96.48,JAMNAAUTO.BO
+532508,Jindal Stainless Ltd.,INE220G01021,327.65,JSL.BO
+532286,Jindal Steel & Power Ltd,INE749A01030,574.75,JINDALSTEL.BO
+531543,Jindal Worldwide Ltd.,INE247D01039,334.65,JINDWORLD.BO
+500380,JK Lakshmi Cement Ltd,INE786A01032,728.0,JKLAKSHMI.BO
+532162,JK Paper Ltd.,INE789E01012,323.7,JKPAPER.BO
+523405,JM Financial Ltd,INE780C01023,75.04,JMFINANCIL.BO
+533148,JSW Energy Ltd,INE121E01018,253.5,JSWENERGY.BO
+500228,JSW Steel Ltd,INE019A01038,771.55,JSWSTEEL.BO
+533155,Jubilant FoodWorks Ltd,INE797F01020,493.9,JUBLFOOD.BO
+543271,Jubilant Ingrevia Limited,INE0BY001018,463.25,JUBLINGREA.BO
+530019,Jubilant Pharmova Sciences Ltd,INE700A01033,409.3,JUBLPHARMA.BO
+535648,Just Dial Ltd,INE599M01018,769.55,JUSTDIAL.BO
+532926,Jyothy Labs Ltd,INE668F01031,213.65,JYOTHYLAB.BO
+500233,Kajaria Ceramics Ltd.,INE217B01036,1289.65,KAJARIACER.BO
+522287,Kalpataru Projects International Ltd,INE220B01022,544.4,KPIL.BO
+543278,Kalyan Jewellers India Ltd,INE303R01014,132.85,KALYANKJIL.BO
+500165,Kansai Nerolac Paints Ltd.,INE531A01024,459.85,KANSAINER.BO
+532714,KEC International Ltd/India,INE389H01022,570.1,KEC.BO
+517569,KEI Industries Ltd,INE878B01027,2239.15,KEI.BO
+540680,KIOCL Ltd,INE880L01014,191.5,KIOCL.BO
+532942,KNR Constructions Ltd,INE634I01029,245.65,KNRCON.BO
+500247,Kotak Mahindra Bank Ltd,INE237A01028,1823.95,KOTAKBANK.BO
+542651,KPIT Technologies Ltd,INE04I401011,1072.0,KPITTECH.BO
+532889,KPR Mill Ltd,INE930H01031,637.3,KPRMILL.BO
+530813,KRBL Ltd,INE001B01026,351.65,KRBL.BO
+543308,Krishna Institute of Medical Sciences Ltd,INE967H01017,1700.05,KIMS.BO
+500249,KSB Ltd,INE999A01015,2179.45,KSB.BO
+533519,L&T Finance Holdings Ltd,INE498L01015,118.1,L&TFH.BO
+540115,L&T Technology Services Ltd,INE010V01017,3908.5,LTTS.BO
+526947,La Opala Rg Ltd.,INE059D01020,406.5,LAOPALA.BO
+500252,Lakshmi Machine Works Ltd,INE269B01029,12815.4,LAXMIMACH.BO
+500510,Larsen & Toubro Ltd,INE018A01030,2363.2,LT.BO
+543398,Latent View Analytics Ltd,INE0I7C01011,351.45,LATENTVIEW.BO
+540222,Laurus Labs Ltd,INE947Q01028,364.55,LAURUSLABS.BO
+543277,Laxmi Organic Industries Ltd,INE576O01020,266.0,LXCHEM.BO
+541233,Lemon Tree Hotels Ltd,INE970X01018,94.69,LEMONTREE.BO
+500253,LIC Housing Finance Ltd,INE115A01026,384.35,LICHSGFIN.BO
+543526,Life Insurance Corporation of India,INE0J1Y01017,618.3,LICI.BO
+523457,Linde India Ltd,INE473A01011,4362.55,LINDEINDIA.BO
+512455,Lloyds Metals & Energy Ltd.,INE281B01032,380.65,LLOYDSME.BO
+540005,LTIMindtree Ltd,INE214T01019,5049.7,LTIM.BO
+500257,Lupin Ltd,INE326A01037,825.15,LUPIN.BO
+543287,Macrotech Developers Ltd,INE670K01029,629.95,LODHA.BO
+539957,Mahanagar Gas Ltd,INE002S01010,1031.45,MGL.BO
+500266,Maharashtra Scooters Ltd.,INE288A01013,5439.55,MAHSCOOTER.BO
+532720,Mahindra & Mahindra Financial Services Ltd,INE774D01024,316.4,M&MFIN.BO
+500520,Mahindra & Mahindra Ltd,INE101A01026,1403.3,M&M.BO
+533088,Mahindra Holidays & Resorts India Ltd,INE998I01010,289.6,MHRIL.BO
+532313,Mahindra Lifespace Developers Ltd,INE813A01018,463.35,MAHLIFE.BO
+531213,Manappuram Finance Ltd,INE522D01027,127.15,MANAPPURAM.BO
+500109,Mangalore Refinery & Petrochemicals Ltd,INE103A01014,78.7,MRPL.BO
+531642,Marico Ltd,INE196A01026,535.4,MARICO.BO
+532500,Maruti Suzuki India Ltd,INE585B01010,9526.9,MARUTI.BO
+540749,MAS Financial Services Ltd,INE348L01012,772.2,MASFIN.BO
+523704,Mastek Ltd,INE759A01021,1982.15,MASTEK.BO
+500271,Max Financial Services Ltd,INE180A01020,688.95,MFSL.BO
+543220,Max Healthcare Institute Ltd,INE027H01010,601.35,MAXHEALTH.BO
+543237,Mazagon Dock Shipbuilders Ltd,INE249Z01012,1218.0,MAZDOCK.BO
+543427,Medplus Health Services Ltd,INE804L01022,800.35,MEDPLUS.BO
+543426,Metro Brands Ltd,INE317I01021,988.8,METROBRAND.BO
+542650,Metropolis Healthcare Ltd,INE112L01020,1374.5,METROPOLIS.BO
+538962,Minda Corporation Ltd,INE842C01021,286.15,MINDACORP.BO
+541195,Mishra Dhatu Nigam Ltd,INE099Z01011,283.95,MIDHANI.BO
+513377,MMTC LTD,INE123F01029,32.36,MMTC.BO
+543498,Motherson Sumi Wiring India Ltd,INE0FS801015,57.76,MSUMI.BO
+532892,Motilal Oswal Financial Services Ltd,INE338I01027,714.9,MOTILALOFS.BO
+526299,MphasiS Ltd,INE356A01018,1873.1,MPHASIS.BO
+500290,MRF Ltd,INE883A01011,99735.35,MRF.BO
+534091,Multi Commodity Exchange of India Limited,INE745G01035,1570.2,MCX.BO
+533398,Muthoot Finance Ltd,INE414G01012,1180.65,MUTHOOTFIN.BO
+539551,Narayana Hrudayalaya Ltd,INE410P01011,1006.65,NH.BO
+524816,Natco Pharma Ltd,INE987B01026,631.25,NATCOPHARM.BO
+532234,National Aluminium Co Ltd,INE139A01034,84.6,NATIONALUM.BO
+532504,Navin Fluorine International Ltd.,INE048G01026,4641.2,NAVINFLUOR.BO
+534309,NBCC (India) Ltd,INE095N01031,41.18,NBCC.BO
+500294,NCC Ltd/India,INE868B01028,120.15,NCC.BO
+505355,Nesco Ltd.,INE317F01035,635.0,NESCO.BO
+500790,Nestle India Ltd,INE239A01016,22784.6,NESTLEIND.BO
+532798,Network 18 Media & Investments Ltd,INE870H01013,66.53,NETWORK18.BO
+533098,NHPC Ltd,INE848E01016,45.54,NHPC.BO
+540767,Nippon Life India Asset Management Ltd,INE298J01013,245.85,NAM-INDIA.BO
+513683,NLC India Ltd,INE589A01014,96.84,NLCINDIA.BO
+526371,NMDC Ltd,INE584A01023,106.2,NMDC.BO
+500730,NOCIL Ltd.,INE163A01018,218.95,NOCIL.BO
+532555,NTPC Ltd,INE733E01010,185.7,NTPC.BO
+543334,Nuvoco Vistas Corporation Ltd,INE118D01016,353.0,NUVOCO.BO
+533273,Oberoi Realty Ltd,INE093I01010,1008.4,OBEROIRLTY.BO
+500312,Oil & Natural Gas Corp Ltd,INE213A01029,157.7,ONGC.BO
+533106,Oil India Ltd,INE274J01014,253.95,OIL.BO
+543396,One 97 Communications Ltd,INE982J01020,870.75,PAYTM.BO
+532466,Oracle Financial Services Software Ltd,INE881D01027,3866.0,OFSS.BO
+541301,Orient Electric Ltd,INE142Z01019,244.45,ORIENTELEC.BO
+532827,Page Industries Ltd,INE761H01022,38824.85,PAGEIND.BO
+500368,Patanjali Foods Limited,INE619A01035,1165.55,PATANJALI.BO
+543390,PB Fintech Ltd,INE417T01026,661.15,POLICYBZR.BO
+506590,PCBL Ltd,INE602A01031,157.85,PCBL.BO
+533179,Persistent Systems Ltd,INE262H01013,4939.45,PERSISTENT.BO
+532522,Petronet LNG Ltd,INE347G01014,225.85,PETRONET.BO
+500680,Pfizer Ltd (India),INE182A01018,3845.65,PFIZER.BO
+503100,Phoenix Mills Ltd,INE211B01039,1568.25,PHOENIXLTD.BO
+523642,PI Industries Ltd,INE603J01030,3855.7,PIIND.BO
+500331,Pidilite Industries Ltd,INE318A01026,2670.95,PIDILITIND.BO
+500302,Piramal Enterprises Ltd,INE140A01024,792.35,PEL.BO
+543635,Piramal Pharma Ltd,INE0DK501011,93.93,PPLPHARMA.BO
+540173,PNB Housing Finance Ltd,INE572E01012,570.45,PNBHOUSING.BO
+539150,PNC Infratech Ltd,INE195J01029,332.8,PNCINFRA.BO
+531768,Poly Medicure Ltd,INE205C01021,1145.45,POLYMED.BO
+542652,Polycab India Ltd,INE455K01017,3531.45,POLYCAB.BO
+524051,Polyplex Corp. Ltd.,INE633B01018,1355.5,POLYPLEX.BO
+524000,Poonawalla Fincorp Ltd,INE511C01022,341.25,POONAWALLA.BO
+532810,Power Finance Corp Ltd,INE134E01011,197.3,PFC.BO
+532898,Power Grid Corp of India Ltd,INE752E01010,243.0,POWERGRID.BO
+522205,Praj Industries Ltd,INE074A01025,393.1,PRAJIND.BO
+533274,Prestige Estates Projects Ltd,INE811K01011,569.0,PRESTIGE.BO
+542907,Prince Pipes and Fittings Ltd,INE689W01016,672.1,PRINCEPIPE.BO
+500338,Prism Johnson Ltd,INE010A01011,127.75,PRSMJOHNSN.BO
+530117,Privi Speciality Chemicals Ltd,INE959A01019,1101.35,PRIVISCL.BO
+500126,Procter & Gamble Health Limited,INE199A01012,5078.6,PGHL.BO
+500459,Procter & Gamble Hygiene & Health Care Ltd,INE179A01014,13918.4,PGHH.BO
+533295,Punjab & Sind Bank,INE608A01012,31.32,PSB.BO
+532461,Punjab National Bank,INE160A01022,51.98,PNB.BO
+532689,PVR INOX Ltd,INE191H01014,1423.5,PVRINOX.BO
+539978,Quess Corp Ltd,INE615P01015,434.15,QUESS.BO
+532497,Radico Khaitan Ltd,INE944F01028,1196.45,RADICO.BO
+542649,Rail Vikas Nigam Ltd,INE415G01027,124.4,RVNL.BO
+500339,Rain Industries Limited,INE855B01025,172.75,RAIN.BO
+543524,Rainbow Children's Medicare Ltd,INE961O01016,961.55,RAINBOW.BO
+531500,Rajesh Exports Ltd,INE343B01030,565.95,RAJESHEXPO.BO
+500355,Rallis India Ltd,INE613A01020,193.75,RALLIS.BO
+500260,Ramco Cements Ltd,INE331A01037,934.4,RAMCOCEM.BO
+524230,Rashtriya Chemicals & Fertilizers Ltd.,INE027A01015,108.6,RCF.BO
+520111,Ratnamani Metals & Tubes Ltd,INE703B01027,2325.95,RATNAMANI.BO
+500330,Raymond Ltd.,INE301A01014,1731.4,RAYMOND.BO
+540065,RBL Bank Ltd,INE976G01028,171.95,RBLBANK.BO
+532955,REC Ltd,INE020B01018,153.05,RECLTD.BO
+532805,Redington Ltd,INE891D01026,187.3,REDINGTON.BO
+530517,Relaxo Footwears Ltd,INE131B01039,909.75,RELAXO.BO
+500325,Reliance Industries Ltd,INE002A01018,2551.5,RELIANCE.BO
+543248,Restaurant Brands Asia Ltd,INE07T201019,113.25,RBA.BO
+534076,Rhi Magnesita India Ltd,INE743M01012,673.05,RHIM.BO
+541556,RITES Ltd,INE320J01015,393.75,RITES.BO
+543213,Rossari Biotech Ltd,INE02A801020,848.25,ROSSARI.BO
+543228,Route Mobile Ltd,INE450U01017,1572.45,ROUTE.BO
+517334,Samvardhana Motherson International Ltd,INE775A01035,81.16,MOTHERSON.BO
+500674,Sanofi India Ltd,INE058A01010,6849.6,SANOFI.BO
+543397,Sapphire Food India Ltd,INE806T01012,1374.15,SAPPHIRE.BO
+532163,Saregama India Ltd,INE979A01025,340.55,SAREGAMA.BO
+543066,SBI Cards and Payment Services Limited,INE018E01016,905.5,SBICARD.BO
+540719,SBI Life Insurance Company Ltd,INE123W01016,1280.7,SBILIFE.BO
+505790,Schaeffler India Ltd,INE513A01022,3186.85,SCHAEFFLER.BO
+540203,Sheela Foam Ltd,INE916U01025,1197.6,SFL.BO
+532638,Shoppers Stop Ltd,INE498B01024,804.15,SHOPERSTOP.BO
+500387,Shree Cement Ltd,INE070A01015,25977.45,SHREECEM.BO
+532670,Shree Renuka Sugars Ltd,INE087H01022,43.34,RENUKA.BO
+511218,Shriram Finance Ltd,INE721A01013,1469.6,SHRIRAMFIN.BO
+543299,Shyam Metalics and Energy Ltd,INE810G01011,349.55,SHYAMMETL.BO
+500550,Siemens India Ltd,INE003A01024,3806.1,SIEMENS.BO
+540673,SIS Limited,INE285J01028,406.1,SIS.BO
+533206,SJVN Ltd,INE002L01015,38.5,SJVN.BO
+500472,SKF India Ltd,INE640A01023,4795.95,SKFINDIA.BO
+532784,Sobha Limited,INE671H01015,550.15,SOBHA.BO
+532725,Solar Industries India Ltd,INE343H01029,3831.3,SOLARINDS.BO
+543300,Sona BLW Precision Forgings Ltd,INE073K01018,522.1,SONACOMS.BO
+532221,Sonata Software Ltd,INE269A01021,1015.5,SONATSOFTW.BO
+503806,SRF Ltd,INE647A01010,2404.7,SRF.BO
+540575,Star Cement Ltd,INE460H01021,143.6,STARCEMENT.BO
+543412,Star Health and Allied Insurance Company Ltd,INE575P01011,541.5,STARHEALTH.BO
+500112,State Bank of India,INE062A01020,568.8,SBIN.BO
+500113,Steel Authority of India Ltd,INE114A01011,85.9,SAIL.BO
+542760,Sterling and Wilson Renewable Energy Ltd,INE00M201021,305.45,SWSOLAR.BO
+532374,Sterlite Technologies Ltd.,INE089C01029,151.5,STLTECH.BO
+542920,Sumitomo Chemical India Ltd,INE258G01013,428.15,SUMICHEM.BO
+532872,Sun Pharma Advanced Research Co Ltd,INE232I01014,196.4,SPARC.BO
+524715,Sun Pharmaceutical Industries Ltd,INE044A01036,1001.25,SUNPHARMA.BO
+532733,Sun TV Network Ltd,INE424H01027,442.9,SUNTV.BO
+520056,Sundaram Clayton Ltd,INE105A01035,4777.25,SUNCLAYLTD.BO
+500403,Sundaram Fastners,INE387A01021,1193.0,SUNDRMFAST.BO
+512179,Sunteck Realty Ltd,INE805D01034,283.65,SUNTECK.BO
+509930,Supreme Industries,INE195A01028,2990.65,SUPREMEIND.BO
+500405,Supreme Petrochem Ltd.,INE663A01033,412.45,SPLPETRO.BO
+543064,Suven Pharmaceuticals Limited,INE03QK01018,486.45,SUVENPHAR.BO
+532667,Suzlon Energy Ltd,INE040H01021,14.53,SUZLON.BO
+503310,Swan Energy Ltd.,INE665A01038,234.2,SWANENERGY.BO
+517385,Symphony Ltd,INE225D01027,910.05,SYMPHONY.BO
+539268,Syngene International Ltd,INE398R01022,742.95,SYNGENE.BO
+543596,Tamilnad Mercantile Bank Ltd,INE668A01016,425.85,TMB.BO
+532790,Tanla Platforms Ltd,INE483C01032,1029.3,TANLA.BO
+500770,Tata Chemicals Ltd,INE092A01019,978.95,TATACHEM.BO
+532301,Tata Coffee Ltd.,INE493A01027,248.5,TATACOFFEE.BO
+500483,Tata Communications Ltd,INE151A01013,1590.65,TATACOMM.BO
+532540,Tata Consultancy Services Ltd,INE467B01029,3209.65,TCS.BO
+500800,Tata Consumer Products Ltd,INE192A01025,856.75,TATACONSUM.BO
+500408,Tata Elxsi Ltd,INE670A01012,7682.5,TATAELXSI.BO
+501301,Tata Investment Corp Ltd,INE672A01018,2413.4,TATAINVEST.BO
+500570,Tata Motors Ltd,INE155A01022,565.75,TATAMOTORS.BO
+570001,Tata Motors Ltd DVR,IN9155A01020,311.0,TATAMTRDVR.BO
+500400,Tata Power Co Ltd,INE245A01021,223.15,TATAPOWER.BO
+500470,Tata Steel Ltd,INE081A01020,114.0,TATASTEEL.BO
+532371,Tata Teleservices Maharashtra Ltd,INE517B01013,75.92,TTML.BO
+540212,TCI Express Ltd,INE586V01016,1636.95,TCIEXP.BO
+539658,TeamLease Services Ltd,INE985S01024,2406.8,TEAMLEASE.BO
+532755,Tech Mahindra Ltd,INE669C01036,1093.2,TECHM.BO
+540595,Tejas Networks Ltd,INE010J01012,711.05,TEJASNET.BO
+540769,The New India Assurance Company Ltd,INE470Y01017,121.85,NIACL.BO
+500411,Thermax Ltd,INE152A01029,2383.65,THERMAX.BO
+522113,Timken India Ltd.,INE325A01013,3485.5,TIMKEN.BO
+500114,Titan Co Ltd,INE280A01028,2969.55,TITAN.BO
+500420,Torrent Pharmaceuticals Ltd,INE685A01028,1857.95,TORNTPHARM.BO
+532779,Torrent Power Ltd,INE813H01021,673.05,TORNTPOWER.BO
+500251,Trent Ltd.,INE849A01020,1706.1,TRENT.BO
+521064,Trident Ltd.,INE064C01022,33.36,TRIDENT.BO
+533655,Triveni Turbine Limited,INE152M01016,408.05,TRITURBINE.BO
+517506,TTK Prestige Ltd,INE690A01028,747.65,TTKPRESTIG.BO
+540762,Tube Investments Of India,INE974X01010,2974.6,TIINDIA.BO
+532800,TV18 Broadcast Ltd,INE886H01027,40.23,TV18BRDCST.BO
+532343,TVS Motor Co Ltd,INE494B01023,1337.85,TVSMOTOR.BO
+532505,UCO Bank,INE691A01018,26.71,UCOBANK.BO
+500148,Uflex Ltd,INE516A01017,425.5,UFLEX.BO
+532538,UltraTech Cement Ltd,INE481G01011,8267.45,ULTRACEMCO.BO
+532477,Union Bank of India,INE692A01016,71.52,UNIONBANK.BO
+532478,United Breweries Ltd,INE686F01025,1493.45,UBL.BO
+532432,United Spirits Ltd,INE854D01024,898.75,MCDOWELL-N.BO
+532539,UNO Minda Ltd,INE405E01023,585.25,UNOMINDA.BO
+512070,UPL Ltd,INE628A01036,685.75,UPL.BO
+543238,UTI Asset Management Company Ltd,INE094J01016,686.3,UTIAMC.BO
+532953,V-Guard Industries Ltd,INE951I01027,257.05,VGUARD.BO
+534976,V-Mart Retail Limited,INE665J01013,2105.05,VMART.BO
+532156,Vaibhav Global Ltd,INE884A01027,312.65,VAIBHAVGBL.BO
+502986,Vardhman Textiles Ltd.,INE825A01020,359.05,VTL.BO
+541578,Varroc Engineering Ltd,INE665L01035,330.15,VARROC.BO
+540180,Varun Beverages Ltd,INE200M01021,801.6,VBL.BO
+543463,Vedant Fashions Ltd,INE825V01034,1340.1,MANYAVAR.BO
+500295,Vedanta Ltd,INE205A01025,280.5,VEDL.BO
+524200,Vinati Organics Ltd,INE410B01037,1840.65,VINATIORGA.BO
+507880,VIP Industries Ltd,INE054A01027,653.35,VIPIND.BO
+532822,Vodafone Idea Ltd,INE669E01016,7.64,IDEA.BO
+500575,Voltas Ltd,INE226A01021,789.35,VOLTAS.BO
+509966,VST Industries Ltd.,INE710A01016,3439.65,VSTIND.BO
+532144,Welspun Corp Ltd,INE191B01025,265.65,WELCORP.BO
+514162,Welspun India Ltd.,INE192B01031,92.61,WELSPUNIND.BO
+505533,Westlife Development Ltd,INE274F01020,853.9,WESTLIFE.BO
+500238,Whirlpool of India Ltd,INE716A01013,1451.0,WHIRLPOOL.BO
+507685,Wipro Ltd,INE075A01022,380.05,WIPRO.BO
+532648,Yes Bank Ltd,INE528G01035,16.23,YESBANK.BO
+505537,Zee Entertainment Enterprises Ltd,INE256A01028,185.3,ZEEL.BO
+504067,Zensar Technologies Ltd,INE520A01027,390.75,ZENSARTECH.BO
+533023,ZF Commercial Vehicle Control Systems India Ltd,INE342J01019,11989.85,ZFCVINDIA.BO
+543320,Zomato Ltd,INE758T01015,75.83,ZOMATO.BO
+532321,Zydus Lifesciences Ltd,INE010B01027,554.35,ZYDUSLIFE.BO
+531335,Zydus Wellness Ltd,INE768C01010,1497.6,ZYDUSWELL.BO

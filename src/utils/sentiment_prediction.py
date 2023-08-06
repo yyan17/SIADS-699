@@ -8,8 +8,10 @@ import sys
 sys.path.append('src/utils')
 import text_preprocessing, data_load
 
-tickers = ['TTML.NS', 'CHOLAFIN.NS', 'KSB3.DE', 'DLF.NS', 'IPCALAB.NS']
-company_names = ['Tata Teleservices', 'Cholamandalam Investment & Finance Company', 'KSB', 'DLF', 'Ipca Laboratories']
+
+tickers = ['EIHOTEL.BO', 'ELGIEQUIP.BO', 'IPCALAB.NS', 'PGHL.BO', 'TV18BRDCST.BO']
+company_names = ['EIH Limited', 'Elgi Equipments', 'Ipca Laboratories', 'Procter & Gamble Health', 'TV18 Broadcast']
+
 ticker_dic = dict(zip(tickers, company_names))
 
 num_cols = ['polarity', 'subjectivity', 'compound']
