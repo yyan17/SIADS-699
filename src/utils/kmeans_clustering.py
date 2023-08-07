@@ -98,7 +98,9 @@ def ceemdan_feature(df):
     return(preprocessed_dataset)
 
 
-def plot_clusters(df, cluster_labels):
+def plot_clusters(df, cluster_labels, vis_name):
+    vis_path = '../../visualizations/'
+    vis_file = vis_path + vis_name
     plot_count = math.ceil(math.sqrt(len(set(cluster_labels))))
     fig, axis = plt.subplots(plot_count, plot_count, figsize=(25, 25))
     row = 0
@@ -124,6 +126,7 @@ def plot_clusters(df, cluster_labels):
         if col % plot_count == 0:
             row += 1
             col = 0
+    plt.savefig(vis_file)
             
             
 # Compute dissimilarity matrix between stocs across clusters            
