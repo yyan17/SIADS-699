@@ -17,8 +17,7 @@ def plot_prediction_range(df: pd.DataFrame, ticker: str) -> None:
             x=df['date'],
             y=df['pred_high'],
             mode='lines',
-            line=dict(color='rgb(255,165,0)'),
-#             line=dict(color='rgb(0, 128, 0)'),            
+            line=dict(color='rgb(255,140,0)'),
         ),    
         go.Scatter(
             name='Upper Bound',
