@@ -9,22 +9,25 @@ import shap
 seed= 42
 
 # import user defined libraries
-from data_wrangler import convert_custom_target_to_actual
+from data_wrangler import convert_custom_target_to_actual, convert_custom_target_to_actual_for_supervise
 
-def evaluate_model(model, window, dev_data, X_test, y_test):
+def evaluate_model(model, window, dev_data, dev_date, X_test, y_test):
     # do target prediction using the provide model
     y_pred = model.predict(X_test)
 
     # convert back to original value, before computing mape            
-    y_test = convert_custom_target_to_actual(dev_data, window, y_test)
-    y_pred = convert_custom_target_to_actual(dev_data, window, y_pred)
+    y_test = convert_custom_target_to_actual_for_supervise(dev_data, window, y_test)
+    y_pred = convert_custom_target_to_actual_for_supervise(dev_data, window, y_pred)
+
+    dev_dates = dev_date[window:].reset_index(drop=True)
+    predictions_df = pd.DataFrame({'date': dev_dates, 'y_test': y_test, 'y_pred': y_pred})
 
     # compute regression metric - mape 
     mape = mean_absolute_percentage_error(y_test, y_pred)
 
     # compute rmse metric
     rmse = mean_squared_error(y_test, y_pred, squared=False)        
-    return(y_pred, mape, rmse)
+    return(predictions_df, mape, rmse)
 
 
 def train_model(model, X_train, y_train):
@@ -61,5 +64,5 @@ def select_model(model_name, seed):
     elif model_name == 'XGBoost':
         model = xgb.XGBRegressor(random_state=seed, n_jobs=-1)
     elif model_name =='LightGBM':
-        model = lgb.LGBMRegressor(random_state=seed, n_jobs=-1)
+        model = lgb.LGBMRegressor(random_state=seed, n_jobs=2, verbose=-1)
     return(model)
