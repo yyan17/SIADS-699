@@ -5,6 +5,11 @@ import numpy as np
 import time
 import os
 
+cols_to_drop  = ['trend_psar_up', 'trend_psar_down']
+window_lst = [5, 10, 20, 50, 100, 200]
+rolling_exclude_cols = ['open', 'date','close','adj close', 'volume', 'high', 'low']
+agg_topic_ticker_sent_cols = ['date', 'agg_polarity', 'agg_compound', 'topic_polarity', 'topic_compound', 'ticker_polarity', 'ticker_compound']
+
 missing_val_threshold_percent = 40
              
 def load_rawdata(path, tickers_list):
@@ -196,12 +201,103 @@ def create_custom_target(df: pd.DataFrame) -> pd.DataFrame:
     return(data_df.iloc[1:, ])
     
     
-def convert_custom_target_to_actual(df: pd.DataFrame, window: int, y: "pd.Series[int]") -> "pd.Series[int]":
+def convert_custom_target_to_actual_for_supervise(df: pd.DataFrame, window: int, y: "pd.Series[int]") -> "pd.Series[int]":
     """
-    this module converts custom target - ln(high/yesterday_close) to actual high price again
+    this module converts custom target - ln(high/yesterday_close) to actual high price again for timeseries converted data using rolling         window of size 10
     """
     data_df = df.copy()
     
     # exclude first 10 rows of train/test data, as while us
     y = np.exp(y) * data_df.loc[data_df.index[window:], 'yesterday_close'].reset_index(drop=True)
     return(y)    
+
+def convert_custom_target_to_actual(df: pd.DataFrame, col: str) -> "pd.Series[int]":
+    """
+    this module converts custom target - ln(high/yesterday_close) to actual high price again
+    """
+    data_df = df.copy()
+    
+    # exclude first 10 rows of train/test data, as while us
+    y = np.exp(data_df[col]) * data_df.loc[:, 'yesterday_close'].reset_index(drop=True)
+    return(y)    
+
+def fetch_topn_features(path: str, topn: int) -> list:  
+    shap_files = os.listdir(path)  
+    shap_files = [file for file in shap_files if '.csv' in file]
+    for indx, shap_file in enumerate(shap_files):
+        feat_df = pd.read_csv(path + shap_file)
+        if indx == 0:
+            whole_feat_df = feat_df
+        else:
+            whole_feat_df = whole_feat_df.merge(feat_df, on='feature', how='inner')  
+            
+    whole_feat_df['avg_shap_value'] = whole_feat_df.loc[:, whole_feat_df.columns != 'feature'].sum(axis=1)
+    whole_feat_df = whole_feat_df.sort_values('avg_shap_value', ascending=False).reset_index(drop=True)
+    
+    topn_features = whole_feat_df['feature'].values.tolist()[:topn]
+    return(topn_features)
+
+           
+def create_all_features(data_paths: str, ticker: str, topic_id: int) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """
+    this module accepts path for data, ticker and topic_id for the industry of ticker and create all the features from them
+    """    
+    try:
+        tickers_df = pd.read_csv(data_paths['RAW_DATA'] + ticker + '.csv')
+    except FileNotFoundError as e:
+        print("raw data file not found for ticker provided")
+        return(None, None)
+
+    # data cleaning, handling missing/infinite values, dorp columns with mostly na values
+    clean_df = data_cleaning(tickers_df, cols_to_drop)
+
+    # create rolling average feature over the timeframe of provide time frame(window list) list
+    rolling_feature_df = create_rolling_features(clean_df, window_lst, rolling_exclude_cols)
+
+    # combine all sentiment scores to create ready useable features
+    sentiment_df = read_sentiment_features(data_paths, topic_id, ticker)
+    sentiment_df = sentiment_df[agg_topic_ticker_sent_cols]
+
+    # create ready usable financial features
+    qtr_fin_df, yrly_fin_df = read_financial_features(data_paths, ticker)
+    qtr_fin_df = data_cleaning_financial(qtr_fin_df)
+    yrly_fin_df = data_cleaning_financial(yrly_fin_df)        
+
+    # create index features
+    index_features_df = pd.read_csv(data_paths['INDEX_FEATURES'] + 'index_features.csv')
+
+    
+    # combine all the features 
+    combined_df = rolling_feature_df.merge(qtr_fin_df, on='date', how='left')
+    combined_df = combined_df.merge(yrly_fin_df, on='date', how='left')
+
+     # combine sentiment scores features
+    combined_df = combined_df.merge(sentiment_df, on='date', how='left')
+
+     # combine other index features/oli price, Rs rate, interest rate etc
+    combined_df = combined_df.merge(index_features_df, on='date', how='left')
+    print("shape after combining index featuress results:", combined_df.shape)
+
+    # create the custom target price using ln(high/yesterday_close)
+    combined_df = create_custom_target(combined_df)
+
+    combined_date_df = combined_df['date']
+    combined_df = combined_df.drop(columns='date')
+
+    # combined_df = combined_df.loc[:, lightGBM_top_200_features]
+
+    # finally fill any missing values
+    combined_df = combined_df.replace([np.inf, -np.inf], np.nan)
+    combined_df = combined_df.fillna(method='ffill').fillna(method='bfill')
+    combined_df = pd.concat([combined_date_df, combined_df], axis=1)
+    return(combined_df)
+
+
+# utility for preparig the data for prophet
+def prepare_data_for_prophet(df: pd.DataFrame, cols: list) -> pd.DataFrame:
+    prophet_cols = ['ds', 'y']
+    df = df.loc[:, cols]
+    df.columns = prophet_cols
+    return(df)
+
+    
