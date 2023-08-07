@@ -48,3 +48,29 @@ def plot_prediction_range(df: pd.DataFrame, ticker: str) -> None:
     )
     fig.update_layout(template="simple_white")
     fig.show()
+    
+def plot_predictions(df: pd.DataFrame, ticker: str) -> None:
+    fig = go.Figure([
+        go.Scatter(
+            name='Actual Price',
+            x=df['date'],
+            y=df['y_test'],
+            mode='lines',
+            line=dict(color='rgb(31, 119, 180)'),
+        ),
+        go.Scatter(
+            name='Predicted Price',
+            x=df['date'],
+            y=df['y_pred'],
+            mode='lines',
+            line=dict(color='rgb(255,140,0)'),
+        )
+    ])
+    fig.update_layout(
+        xaxis_title='Date',
+        yaxis_title='Stock Price(Rs)',
+        title=f'Stock Price Prediction for {ticker}',
+        hovermode="x"
+    )
+    fig.update_layout(template="simple_white")
+    fig.show()    
