@@ -201,28 +201,20 @@ def create_custom_target(df: pd.DataFrame) -> pd.DataFrame:
     return(data_df.iloc[1:, ])
     
     
-def convert_custom_target_to_actual_for_supervise(df: pd.DataFrame, window: int, y: "pd.Series[int]") -> "pd.Series[int]":
+def convert_custom_target_to_actual(df: pd.DataFrame, window: int, y: "pd.Series[int]") -> "pd.Series[int]":
     """
     this module converts custom target - ln(high/yesterday_close) to actual high price again for timeseries converted data using rolling         window of size 10
     """
     data_df = df.copy()
     
-    # exclude first 10 rows of train/test data, as while us
+    # exclude first 10 rows of train/test data, as while us   
     y = np.exp(y) * data_df.loc[data_df.index[window:], 'yesterday_close'].reset_index(drop=True)
     return(y)    
-
-def convert_custom_target_to_actual(df: pd.DataFrame, col: str) -> "pd.Series[int]":
-    """
-    this module converts custom target - ln(high/yesterday_close) to actual high price again
-    """
-    data_df = df.copy()
-    
-    # exclude first 10 rows of train/test data, as while us
-    y = np.exp(data_df[col]) * data_df.loc[:, 'yesterday_close'].reset_index(drop=True)
-    return(y)    
+   
 
 def fetch_topn_features(path: str, topn: int) -> list:  
-    shap_files = os.listdir(path)  
+    shap_files = os.listdir(path)
+    print(path)
     shap_files = [file for file in shap_files if '.csv' in file]
     for indx, shap_file in enumerate(shap_files):
         feat_df = pd.read_csv(path + shap_file)
@@ -232,10 +224,8 @@ def fetch_topn_features(path: str, topn: int) -> list:
             whole_feat_df = whole_feat_df.merge(feat_df, on='feature', how='inner')  
             
     whole_feat_df['avg_shap_value'] = whole_feat_df.loc[:, whole_feat_df.columns != 'feature'].sum(axis=1)
-    whole_feat_df = whole_feat_df.sort_values('avg_shap_value', ascending=False).reset_index(drop=True)
-    
-    topn_features = whole_feat_df['feature'].values.tolist()[:topn]
-    return(topn_features)
+    whole_feat_df = whole_feat_df.sort_values('avg_shap_value', ascending=False).reset_index(drop=True)    
+    return(whole_feat_df.iloc[:topn])
 
            
 def create_all_features(data_paths: str, ticker: str, topic_id: int) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -291,13 +281,5 @@ def create_all_features(data_paths: str, ticker: str, topic_id: int) -> tuple[pd
     combined_df = combined_df.fillna(method='ffill').fillna(method='bfill')
     combined_df = pd.concat([combined_date_df, combined_df], axis=1)
     return(combined_df)
-
-
-# utility for preparig the data for prophet
-def prepare_data_for_prophet(df: pd.DataFrame, cols: list) -> pd.DataFrame:
-    prophet_cols = ['ds', 'y']
-    df = df.loc[:, cols]
-    df.columns = prophet_cols
-    return(df)
 
     

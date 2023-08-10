@@ -2,6 +2,7 @@ from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error
 from sklearn.ensemble import RandomForestRegressor
 from datetime import datetime
 import xgboost as xgb
+from prophet import Prophet
 import lightgbm as lgb
 import pandas as pd
 import numpy as np
@@ -9,18 +10,18 @@ import shap
 seed= 42
 
 # import user defined libraries
-from data_wrangler import convert_custom_target_to_actual, convert_custom_target_to_actual_for_supervise
+from data_wrangler import convert_custom_target_to_actual
 
 def evaluate_model(model, window, dev_data, dev_date, X_test, y_test):
     # do target prediction using the provide model
     y_pred = model.predict(X_test)
 
     # convert back to original value, before computing mape            
-    y_test = convert_custom_target_to_actual_for_supervise(dev_data, window, y_test)
-    y_pred = convert_custom_target_to_actual_for_supervise(dev_data, window, y_pred)
+    y_test = convert_custom_target_to_actual(dev_data, window, y_test).round(3)
+    y_pred = convert_custom_target_to_actual(dev_data, window, y_pred).round(3)
 
     dev_dates = dev_date[window:].reset_index(drop=True)
-    predictions_df = pd.DataFrame({'date': dev_dates, 'y_test': y_test, 'y_pred': y_pred})
+    predictions_df = pd.DataFrame({'date': dev_dates, 'high': y_test, 'pred_high': y_pred})
 
     # compute regression metric - mape 
     mape = mean_absolute_percentage_error(y_test, y_pred)
@@ -65,4 +66,6 @@ def select_model(model_name, seed):
         model = xgb.XGBRegressor(random_state=seed, n_jobs=-1)
     elif model_name =='LightGBM':
         model = lgb.LGBMRegressor(random_state=seed, n_jobs=2, verbose=-1)
+    elif model_name == 'Prophet':
+        model = Prophet()
     return(model)
