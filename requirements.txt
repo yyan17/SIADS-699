@@ -29,7 +29,7 @@ pyemd==0.5.1
 yellowbrick==1.5
 lightgbm==4.0.0
 shap==0.42.0
-xgboost=1.7.4
-requests=2.31.0
-textblob=0.15.3
-vadersentiment=3.3.2
+xgboost==1.7.4
+requests==2.31.0
+textblob==0.15.3
+vadersentiment==3.3.2
