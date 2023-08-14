@@ -29,7 +29,7 @@ data_paths = {'RAW_DATA': 'datasets/rawdata/market_data/',
                  'TOPIC_SENTIMENT': 'datasets/processed_data/agg_sentiment_scores/agg_sent_topic.csv',
                  'TICKER_SENTIMENT': 'datasets/processed_data/agg_sentiment_scores/ticker_news_sent.csv',
                  'TICKERS': ['EIHOTEL.BO', 'ELGIEQUIP.BO', 'IPCALAB.BO', 'PGHL.BO',  'TV18BRDCST.BO'],
-                 'TOPIC_IDS': [33, 921, 495, 495, 921]
+                 'TOPIC_IDS': [33, 921, 495, 495, 385]
 
              }
 
@@ -40,7 +40,7 @@ target_price = 'ln_target'
 seed= 42
 
 # command to run the script
-# python src/scripts/training_evaluation/train-Prophet-multivar.py Prophet customTargetProphetTop50 datasets/processed_data/feature_importance/LightGBM/ datasets/processed_data/model_predictions/Prophet/ trained_models/Prophet/
+# python src/scripts/training_evaluation/train-predict-Prophet.py Prophet customTargetProphetTop50 datasets/processed_data/feature_importance/LightGBM/ datasets/processed_data/model_predictions/Prophet/ trained_models/Prophet/
 
 if __name__ == "__main__":
     warnings.filterwarnings("ignore")
@@ -56,7 +56,7 @@ if __name__ == "__main__":
     topn_features_df = fetch_topn_features(args.FEATURE_PATH, topn_feature_count)
     regressor_cols = topn_features_df['feature'].values.tolist()
     prophet_train_cols = ['date', 'ln_target'] + regressor_cols
-    for indx, ticker in enumerate(data_paths['TICKERS'])[:1]:
+    for indx, ticker in enumerate(data_paths['TICKERS']):
         topic_id = data_paths['TOPIC_IDS'][indx]
         
         path = data_paths['COMBINED_FEATURES'] + ticker + '.csv.gz'         
@@ -105,10 +105,10 @@ if __name__ == "__main__":
             
             # evaluate the fitted model using mape and rmse metrics
             predictions_df, mape, rmse = evaluate_model(trained_model, future, test_data, test_df)
-            pred_len = int(predictions_df.shape[0]/2)
-            predictions_df.iloc[pred_len:].to_csv(args.MODEL_PREDICTIONS + ticker + '.csv', header=True, index=False)
+#             pred_len = int(predictions_df.shape[0]/2)
+            predictions_df.to_csv(args.MODEL_PREDICTIONS + ticker + '.csv', header=True, index=False)
             
-            print("for ticker {0} mean absolute percentage error: {1}, root_mean_square_error: {2}".format(ticker, round(mape, 3), round(rmse, 3)))
+            print("for ticker {0} mean absolute percentage error: {1}, root_mean_square_error: {2}".format(ticker, round(mape, 5), round(rmse, 5)))
         
             mlflow.log_param("ticker", ticker)
             mlflow.log_param("target_price", target_price)
