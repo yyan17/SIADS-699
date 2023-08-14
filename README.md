@@ -33,10 +33,9 @@ With a market capitalization of 3.2 trillion USD, India’s stock market is the 
 In this project, we take sentiment analysis to the next level by first performing topic modeling on financial news and then using the sentiment score only for the particular industry to which the stock belongs. This approach aims to provide a more accurate reflection of market sentiment and aid in better prediction of stock prices.
 
 ### Experiment with Sentiment Features 
-**- Sentiment Correlation Hypothesis Testing:** We conducted hypothesis testing to assess the correlation between stock prices and various sentiment types   (daily/topic/ticker news sentiment). Our findings showed:  
-Moderate positive correlation for CHOLAFIN and IPCALAB tickers.
-Weak positive correlation for TTML and DLF tickers.
-Weak negative correlation for one ticker.  
+**- Sentiment Correlation Hypothesis Testing:** In the first experiment, we did hypothesis testing to find if there is a correlation between stock price and different kinds of news sentiment(daily/topci/ticker news sentiment). 
+We found that while four of the stocks have moderate positive correlation one had weak negative correlation(TV18BRDCST). Weak negative correlation may be attributed to the fact that if there is any positive news for a stock, stock rallies that day and it often goes down the next day owing to profit booking by traders.
+
 **- Stock Price Prediction (With/Wo Sentiment Scores):** In the second experiment, we ran baseline RandomForest Regression for five tickers with and without   sentiment scores while keeping all other features constant. Surprisingly, we observed:
 Improved performance using only technical features.
 Decreased importance of sentiment features (feature importance score of 100+) when including other features like rolling features and financial results.  
@@ -45,39 +44,30 @@ Decreased importance of sentiment features (feature importance score of 100+) wh
 
 We employed a diverse range of models for stock price prediction:
 
-**- Statistical Models:** We utilized AR, ARIMA, and SARIMA to capture time series patterns and trends in stock prices.
-**- Supervised Machine Learning Models:** For regression tasks, we explored Linear Regression, RandomForest, and LightGBM to capture complex relationships in the data.
-**- Deep Learning-Based Models:** LSTM and GRU were used for sequence modeling, allowing us to capture long-term dependencies in stock price patterns.
+**- Statistical Models:** We utilized Prophet to capture time series patterns and trends in stock prices. <br/>
+**- Supervised Machine Learning Models:** For regression tasks, we explored Linear Regression, RandomForest, and LightGBM to capture complex relationships in the data. <br/>
+**- Deep Learning-Based Models:** LSTM were used for sequence modeling, allowing us to capture long-term dependencies in stock price patterns. <br/>
 
 ## Results
 
-We analyze the predictive accuracy and robustness of each model, highlight significant findings, and discuss the influence of market sentiment scores on prediction results.
+In the academic setting of three month time and limited resources, we were able to achieve the best performance by a model(Prophet) 0.67% to 2.35%. For three stocks, we achieved the MAPE score of either <1% or close to 1%. It shows that given the required resources good performance can be achieved.
 
-## Discussion：
-As we are still in the midst of running the models and analyzing the results, we would update this section, once we have some validated results.  
+Further results underscore that the influence of sentiment features on stock price prediction varies depending on the stock and the model employed. In certain instances, the incorporation of sentiment features can bolster prediction accuracy, while in others, it might dampen performance. This emphasizes the significance of meticulous investigation when selecting features and models.
+Additionally, we are using sentiment scores aggregated on a daily basis as we are doing daily predictions. However, emotional reactions to them happen during the trading day as and when news comes. Potentially changing the frequency of the stock market prediction from daily to lower frequency like - min, hourly might be one of the options for further investigation.
 
-## Packages Used:
-Python implementation: CPython
-Python version       : 3.10.12
-IPython version      : 8.12.0
-pandas    : 2.0.3
-numpy     : 1.24.4
-scrapy    : 2.6.2
-matplotlib: 3.7.1
-missingno : 0.4.2
-altair    : 5.0.1
-shap      : 0.42.0
-sklearn   : 1.3.0
-bertopic  : 0.15.0
-plotly    : 5.15.0
-mlflow    : 2.4.2
-bs4       : 4.12.2
-Compiler    : GCC 11.2.0
-OS          : Linux
-Release     : 5.4.72-microsoft-standard-WSL2
-Machine     : x86_64
-Processor   : x86_64
-CPU cores   : 12
-Architecture: 64bit
+For supervised learning models, to provide the temporal sense, we used a 10-day window. Further experiments can be done to show how other rolling window sizes like 5, 20, 30, 50 days impact the performance of the model.
+
+
+## Environment Variables:
+Python implementation: CPython <br/>
+Python version       : 3.10.12 <br/>
+IPython version      : 8.12.0 <br/>
+Compiler    : GCC 11.2.0 <br/>
+OS          : Linux <br/>
+Release     : 5.4.72-microsoft-standard-WSL2 <br/>
+Machine     : x86_64 <br/>
+Processor   : x86_64 <br/>
+CPU cores   : 12 <br/>
+Architecture: 64bit <br/>
 
 ---
