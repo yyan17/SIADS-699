@@ -36,9 +36,9 @@
   - notebooks/PGHL_outcome_visualizations.ipynb
   - notebooks/TV18BRDCST_outcome_visulaizations.ipynb
 - Python scripts for Prophet: <br/>
-  - train-predict-Prophet.py
+  - src/scripts/training_evaluation/train-predict-Prophet.py
 - Python scripts for LightGBM: <br/>
-  - predict_byLightGBM.py
+  - src/scripts/training_evaluation/predict_byLightGBM.py
 
 ## Data Access Statement
 The data sets available in this GitHub repository were sourced from Yahoo Finance, The Economic Times, and BSE India. To the best of our understanding, their utilization is open and unrestricted.
