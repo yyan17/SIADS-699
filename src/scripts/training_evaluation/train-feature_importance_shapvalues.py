@@ -1,20 +1,12 @@
-from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error
-from sklearn.preprocessing import MinMaxScaler, StandardScaler
-from sklearn.model_selection import train_test_split
-from mlflow.models.signature import infer_signature
-from urllib.parse import urlparse
-import mlflow.sklearn
-import mlflow
-import warnings
-import pandas as pd
-import numpy as np
-import argparse
 import sys
+import warnings
+
+import numpy as np
+import pandas as pd
 
 sys.path.append('src/utils/')
-from data_wrangler import data_cleaning, create_rolling_features, timeseries_to_supervise, create_lags
+from data_wrangler import data_cleaning, create_rolling_features, create_lags
 from data_wrangler import read_sentiment_features, read_financial_features
-from model_utils import evaluate_model, train_model, extract_shap_values
 
 import logging
 logging.basicConfig(level=logging.WARN)

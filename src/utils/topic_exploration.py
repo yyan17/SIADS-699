@@ -1,7 +1,5 @@
-from tqdm import tqdm
-import pandas as pd
 import numpy as np
-import os
+import pandas as pd
 
 
 def topic_top_term(model):

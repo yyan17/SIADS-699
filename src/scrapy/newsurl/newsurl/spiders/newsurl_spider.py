@@ -1,13 +1,8 @@
-from w3lib.html import remove_tags, remove_tags_with_content
-from itertools import count
-from sqlalchemy import create_engine
-from scrapy.linkextractors import LinkExtractor
 from datetime import datetime
-from datetime import timedelta, date
-import scrapy
+from itertools import count
 
-import logging
-from scrapy.utils.log import configure_logging
+import scrapy
+from scrapy.linkextractors import LinkExtractor
 from urllib3.exceptions import HTTPError
 
 

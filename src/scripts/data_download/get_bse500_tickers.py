@@ -1,6 +1,7 @@
+import sys
+
 import pandas as pd
 
-import sys
 sys.path.append('src/utils/')
 from tickerutil import getTicker
 
