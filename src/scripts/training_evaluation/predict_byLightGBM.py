@@ -72,10 +72,11 @@ if __name__ == "__main__":
         train_data, test_data = train_test_split(combined_df.loc[:, topn_features], train_size=train_size,
                                                  shuffle=False)
         train_date, test_date = train_test_split(combined_date_df, train_size=train_size, shuffle=False)
-
-        # further split test set to have an hold out set to be used for backtesting
-        eval_data, test_data = train_test_split(test_data, train_size=0.5, shuffle=False)
-        eval_date, test_date = train_test_split(test_date, train_size=0.5, shuffle=False)
+        
+        
+#         # further split test set to have an hold out set to be used for backtesting
+#         eval_data, test_data = train_test_split(test_data, train_size=0.5, shuffle=False)
+#         eval_date, test_date = train_test_split(test_date, train_size=0.5, shuffle=False)
 
         # convert timeseries to be used in supervise learning model    
         X_test, y_test, indx_test = timeseries_to_supervise(test_data, window_size, target_price)
@@ -87,6 +88,6 @@ if __name__ == "__main__":
         # evaluate the fitted model using mape and rmse metrics
         predictions_df, mape, rmse = evaluate_model(trained_model, window_size, test_data, test_date, X_test, y_test)
         predictions_df.to_csv(args.MODEL_PREDICTIONS + ticker + '.csv', header=True, index=False)
-        print("for ticker {0} mean absolute percentage error: {1}, root_mean_square_error: {2}".format(ticker,
-                                                                                                       round(mape, 3),
-                                                                                                       round(rmse, 3)))
+
+        print("for ticker {0} mean absolute percentage error: {1}, root_mean_square_error: {2}".format(ticker, round(mape, 5), round(rmse, 5)))
+        
