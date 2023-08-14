@@ -1,22 +1,17 @@
-from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error
-from sklearn.preprocessing import MinMaxScaler, StandardScaler
-from sklearn.model_selection import train_test_split, TimeSeriesSplit, GridSearchCV, RandomizedSearchCV
-from mlflow.models.signature import infer_signature
-from urllib.parse import urlparse
-import mlflow.sklearn
-import mlflow
-import warnings
-import pandas as pd
-import numpy as np
 import argparse
 import os
 import sys
-from mlflow.tracking import MlflowClient
-import joblib
+import warnings
+from urllib.parse import urlparse
+
+import mlflow
+import pandas as pd
+from mlflow.models.signature import infer_signature
+from sklearn.model_selection import train_test_split
 
 sys.path.append('src/utils/')
 from data_wrangler import timeseries_to_supervise, fetch_topn_features, create_all_features
-from model_utils import evaluate_model, train_model, extract_shap_values, select_model
+from model_utils import evaluate_model, train_model, select_model
 
 import logging
 logging.basicConfig(level=logging.WARN)

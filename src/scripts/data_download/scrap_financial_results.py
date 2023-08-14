@@ -1,13 +1,12 @@
-from bs4 import BeautifulSoup as bs
-from datetime import datetime
-import pandas as pd
-import numpy as np
 import argparse
-import requests
-
 import sys
+from datetime import datetime
+
+import numpy as np
+import pandas as pd
+
 sys.path.append('src/utils/')
-from scrap_financials import scrap_financial_results_placeholer, scrap_financial_result, combine_financial_result
+from scrap_financials import scrap_financial_results_placeholer, combine_financial_result
 
 # top 8 tickers with whole time series data
 tickers = ['AARTIIND.BO', 'EIHOTEL.BO', 'ELGIEQUIP.BO', 'IPCALAB.BO', 'PGHL.BO', 'SONATSOFTW.BO', 'SUPREMEIND.BO', 'TV18BRDCST.BO']

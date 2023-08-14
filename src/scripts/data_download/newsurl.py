@@ -1,8 +1,10 @@
-from scrapy.crawler import CrawlerProcess
-from datetime import timedelta, date, datetime
-import logging
 import argparse
+import logging
 import warnings
+from datetime import date, datetime
+
+from scrapy.crawler import CrawlerProcess
+
 warnings.filterwarnings('ignore')
 
 import sys

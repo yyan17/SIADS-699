@@ -1,16 +1,19 @@
-from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error
-from sklearn.ensemble import RandomForestRegressor
 from datetime import datetime
+
+import lightgbm as lgb
+import numpy as np
+import pandas as pd
+import shap
 import xgboost as xgb
 from prophet import Prophet
-import lightgbm as lgb
-import pandas as pd
-import numpy as np
-import shap
-seed= 42
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error
+
+seed = 42
 
 # import user defined libraries
 from data_wrangler import convert_custom_target_to_actual
+
 
 def evaluate_model(model, window, dev_data, dev_date, X_test, y_test):
     # do target prediction using the provide model
@@ -27,21 +30,21 @@ def evaluate_model(model, window, dev_data, dev_date, X_test, y_test):
     mape = mean_absolute_percentage_error(y_test, y_pred)
 
     # compute rmse metric
-    rmse = mean_squared_error(y_test, y_pred, squared=False)        
-    return(predictions_df, mape, rmse)
+    rmse = mean_squared_error(y_test, y_pred, squared=False)
+    return (predictions_df, mape, rmse)
 
 
 def train_model(model, X_train, y_train):
     start_time = datetime.now()
 
-#     model = RandomForestRegressor(n_estimators=100, random_state=seed, n_jobs=-1)  # You can adjust the hyperparameters as needed
+    #     model = RandomForestRegressor(n_estimators=100, random_state=seed, n_jobs=-1)  # You can adjust the hyperparameters as needed
 
     # fit the model 
     model.fit(X_train, y_train)
     end_time = datetime.now()
-    train_time = end_time - start_time    
+    train_time = end_time - start_time
     print('Total trainging time: ', train_time)
-    return(model)
+    return (model)
 
 
 def extract_shap_values(model, train_data, X_train, window_size):
@@ -49,23 +52,24 @@ def extract_shap_values(model, train_data, X_train, window_size):
     explainer = shap.TreeExplainer(model)
     shap_values = explainer.shap_values(X_train)
 
-
     # convert shape values shape back to timeseries format to get feature importance
-    reconstructed_shape_values = shap_values.reshape((X_train.shape[0], int(X_train.shape[1]/10), window_size))
+    reconstructed_shape_values = shap_values.reshape((X_train.shape[0], int(X_train.shape[1] / 10), window_size))
     average_shap_val_reconstrcuted = np.mean(reconstructed_shape_values, axis=(2))
     average_shape_values = np.mean(average_shap_val_reconstrcuted, axis=0)
-    
-    feature_importance_df = pd.DataFrame(zip(average_shape_values, train_data.columns), columns=['shap_value', 'feature'])
+
+    feature_importance_df = pd.DataFrame(zip(average_shape_values, train_data.columns),
+                                         columns=['shap_value', 'feature'])
     feature_importance_df = feature_importance_df.sort_values('shap_value', ascending=False).reset_index(drop=True)
-    return(feature_importance_df)
+    return (feature_importance_df)
+
 
 def select_model(model_name, seed):
     if model_name == 'RandomForest':
         model = RandomForestRegressor(random_state=seed, n_jobs=-1)  # You can adjust the hyperparameters as needed
     elif model_name == 'XGBoost':
         model = xgb.XGBRegressor(random_state=seed, n_jobs=-1)
-    elif model_name =='LightGBM':
+    elif model_name == 'LightGBM':
         model = lgb.LGBMRegressor(random_state=seed, n_jobs=2, verbose=-1)
     elif model_name == 'Prophet':
         model = Prophet()
-    return(model)
+    return (model)

@@ -1,9 +1,11 @@
-from bs4 import BeautifulSoup as bs
-import pandas as pd
-import numpy as np
-import requests
 import re
 import time
+
+import numpy as np
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup as bs
+
 
 def scrap_financial_results_placeholer(uri):
     base_uri = "https://www.bseindia.com/corporates/"

@@ -1,7 +1,7 @@
-from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error
-import plotly.express as px
-import plotly.graph_objs as go
 import pandas as pd
+import plotly.graph_objs as go
+from sklearn.metrics import mean_absolute_percentage_error
+
 
 # plot chart for actual and predicted values with including predicted values range(highe/lower)
 def plot_prediction_range(df: pd.DataFrame, ticker: str) -> None:
