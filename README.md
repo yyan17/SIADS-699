@@ -1,5 +1,49 @@
 # Indian Stock Market Prediction
 
+## Getting Started
+
+- Clone the repository: <br/>
+<code>git clone git@github.com:yyan17/SIADS-699.git</code>
+- Move to the project folder:<br/>
+<code>cd SIADS-699</code>
+- Set up the necessary dependencies:<br/>
+<code>pip install -r requirements.txt</code>
+- Launch Jupyter notebooks via the command prompt:<br/>
+<code>jupyter <notebook_name></code>
+- Or run python script via the command: <br/>
+<code>python3 <script_name></code>
+- Jupyter notebooks for Random Forest: <br/>
+  - notebooks/random_forest/random_forest_EIHOTEL.ipynb
+  - notebooks/random_forest/random_forest_ELGIEQUIP.ipynb
+  - notebooks/random_forest/random_forest_PGHL.ipynb
+  - notebooks/random_forest/random_forest_TV18BRDCST.ipynb
+  - notebooks/random_forest/random_forest_IPCALAB.ipynb
+- Jupyter notebooks for Linear Regression: <br/>
+  - notebooks/linear_regression/linear_regression_EIHOTEL.ipynb
+  - notebooks/linear_regression/linear_regression_ELGIEQUIP.ipynb
+  - notebooks/linear_regression/linear_regression_PGHL.ipynb
+  - notebooks/linear_regression/linear_regression_TV18BRDCST.ipynb
+  - notebooks/linear_regression/linear_regression_IPCALAB.ipynb
+- Jupyter notebooks for LSTM: <br/>
+  - notebooks/LSTM_EIHOTEL_log_return.ipynb
+  - notebooks/LSTM_ELGIEQUIP_log_return.ipynb
+  - notebooks/LSTM_IPCALAB_log_return.ipynb
+  - notebooks/LSTM_PGHL_log_return.ipynb
+  - notebooks/LSTM_TV18BRDCST_log_return.ipynb
+  - notebooks/EIHOTEL_outcome_visualizations.ipynb
+  - notebooks/ELGIEQUIP_outcome_visualizations.ipynb
+  - notebooks/IPCALAB_outcome_visualizations.ipynb
+  - notebooks/PGHL_outcome_visualizations.ipynb
+  - notebooks/TV18BRDCST_outcome_visulaizations.ipynb
+- Python scripts for Prophet: <br/>
+  - train-predict-Prophet.py
+- Python scripts for LightGBM: <br/>
+  - predict_byLightGBM.py
+
+## Data Access Statement
+The data sets available in this GitHub repository were sourced from Yahoo Finance, The Economic Times, and BSE India. To the best of our understanding, their utilization is open and unrestricted.
+
+We advise that any copying, dissemination, or re-hosting of this data should be undertaken through its original source.
 ## Introduction
 
 With a market capitalization of 3.2 trillion USD, India’s stock market is the world’s fifth-largest stock market. Yet while much literature is available on the analysis of stock prices of the USA, the same cannot be said about the Indian stock market. This project aims to fill this gap by providing a robust analysis using different statistical techniques to predict stock prices.
