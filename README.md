@@ -3,7 +3,7 @@
 ## Getting Started
 
 - Clone the repository: <br/>
-<code>git clone git@github.com:yyan17/SIADS-699.git</code>
+<code>git clone https://github.com/yyan17/SIADS-699.git</code>
 - Move to the project folder:<br/>
 <code>cd SIADS-699</code>
 - Set up the necessary dependencies:<br/>
