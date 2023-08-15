@@ -12,6 +12,7 @@
 <code>cd path/to/target/notebook</code> <br/>
 <code>jupyter <notebook_name></code>
 - Or run python script via the command: <br/>
+<code>cd path/to/target/script</code> <br/>
 <code>python3 <script_name></code>
 - Jupyter notebooks for Random Forest: <br/>
   - notebooks/random_forest/random_forest_EIHOTEL.ipynb
