@@ -35,10 +35,12 @@
   - notebooks/IPCALAB_outcome_visualizations.ipynb
   - notebooks/PGHL_outcome_visualizations.ipynb
   - notebooks/TV18BRDCST_outcome_visulaizations.ipynb
-- Python scripts for Prophet: <br/>
+- Python script for Prophet: <br/>
   - src/scripts/training_evaluation/train-predict-Prophet.py
-- Python scripts for LightGBM: <br/>
+- Python script for LightGBM: <br/>
   - src/scripts/training_evaluation/predict_byLightGBM.py
+- Combined datasets for all 5 tickers can be found at:
+<code>datasets/processed_data/combined_features</code>
 
 ## Data Access Statement
 The data sets available in this GitHub repository were sourced from Yahoo Finance, The Economic Times, and BSE India. To the best of our understanding, their utilization is open and unrestricted.

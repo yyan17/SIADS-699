@@ -28,7 +28,7 @@ def main(target_file, shap_file, feature_file):
 
 
 # Specify the directory where your .csv.gz files are located
-shap_file = r'C:\Users\yangy\Desktop\workspace\SIADS-699\datasets\processed_data\feature_importance\TTML.NS_shap_values.csv'
-feature_file = r'C:\Users\yangy\Desktop\workspace\SIADS-699\datasets\processed_data\combined_features\TTML.NS_combined.csv'
-target_file = r"C:\Users\yangy\Desktop\workspace\SIADS-699\datasets\processed_data\combined_features\TTML.NS_features_top_53_with_sentiment.csv"
+shap_file = r'<your_local_workspace_path>\SIADS-699\datasets\processed_data\feature_importance\TTML.NS_shap_values.csv'
+feature_file = r'<your_local_workspace_path>\SIADS-699\datasets\processed_data\combined_features\TTML.NS_combined.csv'
+target_file = r"<your_local_workspace_path>\SIADS-699\datasets\processed_data\combined_features\TTML.NS_features_top_53_with_sentiment.csv"
 main(target_file, shap_file, feature_file)

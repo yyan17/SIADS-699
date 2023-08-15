@@ -77,6 +77,6 @@ def combine_datasets(file_path, new_filename):
 
 
 if __name__ == "__main__":
-    file_path = r'C:\Users\yangy\Desktop\workspace\SIADS-699\datasets\raw\market_data\KSB3.DE.csv'
-    new_filename = r'C:\Users\yangy\Desktop\workspace\SIADS-699\datasets\raw\market_data\KSB3.DE_combined.csv'
+    file_path = r'<your_local_workspace_path>\SIADS-699\datasets\raw\market_data\KSB3.DE.csv'
+    new_filename = r'<your_local_workspace_path>\SIADS-699\datasets\raw\market_data\KSB3.DE_combined.csv'
     combine_datasets(file_path, new_filename)
