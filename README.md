@@ -39,7 +39,7 @@
   - src/scripts/training_evaluation/train-predict-Prophet.py
 - Python script for LightGBM: <br/>
   - src/scripts/training_evaluation/predict_byLightGBM.py
-- Combined datasets for all 5 tickers can be found at:
+- Combined datasets for all 5 tickers can be found at: <br/>
 <code>datasets/processed_data/combined_features</code>
 
 ## Data Access Statement
