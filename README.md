@@ -9,6 +9,7 @@
 - Set up the necessary dependencies:<br/>
 <code>pip install -r requirements.txt</code>
 - Launch Jupyter notebooks via the command prompt:<br/>
+<code>cd path/to/target/notebook</code> <br/>
 <code>jupyter <notebook_name></code>
 - Or run python script via the command: <br/>
 <code>python3 <script_name></code>
