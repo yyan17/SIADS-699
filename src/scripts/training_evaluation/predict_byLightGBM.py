@@ -48,9 +48,9 @@ if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     parser = argparse.ArgumentParser()
     parser.add_argument('MODEL_NAME', help='provide the ml model, for which we want to train/predict the data ')
-    parser.add_argument('MODEL_PREDICTIONS', help='path where to write computed shape values for feature importance')
-    parser.add_argument('FEATURE_PATH', help='path where to write/read computed shape values for feature importance')    
-    parser.add_argument('TRAINED_MODEL_PATH', help='path where to write computed shape values for feature importance')
+    parser.add_argument('MODEL_PREDICTIONS', help='path where to write model predictions')
+    parser.add_argument('FEATURE_PATH', help='path from where to write/read computed shape values for feature importance')    
+    parser.add_argument('TRAINED_MODEL_PATH', help='path form where to read pre-trained LightGBM model')
     
 
     args = parser.parse_args()
@@ -63,7 +63,7 @@ if __name__ == "__main__":
     for indx, ticker in enumerate(data_paths['TICKERS']):
         topic_id = data_paths['TOPIC_IDS'][indx]
         
-        path = data_paths['COMBINED_FEATURES'] + ticker + '.csv.gz'         
+        path = data_paths['COMBINED_FEATURES'] + ticker + '.csv'         
         if os.path.isfile(path):
                combined_df = pd.read_csv(path)
         else:            
@@ -77,11 +77,12 @@ if __name__ == "__main__":
         # do train/test split the data with shuffle = False
         train_data, test_data = train_test_split(combined_df.loc[:, topn_features], train_size=train_size, shuffle=False)
         train_date, test_date = train_test_split(combined_date_df, train_size=train_size, shuffle=False)
+
         
-        
-#         # further split test set to have an hold out set to be used for backtesting
-#         eval_data, test_data = train_test_split(test_data, train_size=0.5, shuffle=False)
-#         eval_date, test_date = train_test_split(test_date, train_size=0.5, shuffle=False)
+#       removed this hold out dataset processing to align with teams convention of 80/20 train/test process        
+        # further split test set to have an hold out set to be used for backtesting
+        # eval_data, test_data = train_test_split(test_data, train_size=0.5, shuffle=False)
+        # eval_date, test_date = train_test_split(test_date, train_size=0.5, shuffle=False)
 
         # convert timeseries to be used in supervise learning model    
         X_test, y_test, indx_test = timeseries_to_supervise(test_data, window_size, target_price)  

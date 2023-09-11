@@ -48,9 +48,9 @@ if __name__ == "__main__":
     parser.add_argument('MODEL_NAME', help='provide the ml model, for which we want to train/predict the data ')
     parser.add_argument('EXPERIMENT_NAME', help='provide the experiment name, for which to run the training')   
     parser.add_argument('FEATURE_PATH', help='path where to write/read computed shape values for feature importance')
-    parser.add_argument('MODEL_PREDICTIONS', help='path where to write computed shape values for feature importance')    
-    parser.add_argument('TRAINED_MODEL_PATH', help='path where to write computed shape values for feature importance')    
-
+    parser.add_argument('MODEL_PREDICTIONS', help='path where to write model predictions')    
+    parser.add_argument('TRAINED_MODEL_PATH', help='path form where to read pre-trained LightGBM model')    
+    
     args = parser.parse_args()
     # fetch topn features as per feature importance
     topn_features_df = fetch_topn_features(args.FEATURE_PATH, topn_feature_count)
@@ -59,13 +59,13 @@ if __name__ == "__main__":
     for indx, ticker in enumerate(data_paths['TICKERS']):
         topic_id = data_paths['TOPIC_IDS'][indx]
         
-        path = data_paths['COMBINED_FEATURES'] + ticker + '.csv.gz'         
+        path = data_paths['COMBINED_FEATURES'] + ticker + '.csv'
         if os.path.isfile(path):
             combined_df = pd.read_csv(path)
         else:            
             # create all the features
             combined_df = create_all_features(data_paths, ticker, topic_id)                
-            combined_df.to_csv(path + ticker + '.csv', index=False)
+            combined_df.to_csv(path, index=False)
 
         
         # extract date column for pre-processing

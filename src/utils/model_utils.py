@@ -17,8 +17,8 @@ def evaluate_model(model, window, dev_data, dev_date, X_test, y_test):
     y_pred = model.predict(X_test)
 
     # convert back to original value, before computing mape            
-    y_test = convert_custom_target_to_actual(dev_data, window, y_test).round(3)
-    y_pred = convert_custom_target_to_actual(dev_data, window, y_pred).round(3)
+    y_test = convert_custom_target_to_actual(dev_data, window, y_test)
+    y_pred = convert_custom_target_to_actual(dev_data, window, y_pred)
 
     dev_dates = dev_date[window:].reset_index(drop=True)
     predictions_df = pd.DataFrame({'date': dev_dates, 'high': y_test, 'pred_high': y_pred})
