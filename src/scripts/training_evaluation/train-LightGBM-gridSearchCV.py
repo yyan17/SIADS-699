@@ -44,7 +44,7 @@ n_test_split = 5
 seed= 42
 
 # command to run the script
-# python src/scripts/training_evaluation/train-LightGBM-gridSearchCV.py LightGBM gridSearch_withTop50featuresLightGBM  datasets/processed_data/model_predictions/LightGBM/ datasets/processed_data/feature_importance/LightGBM/ trained_models/LightGBM/
+# python src/scripts/training_evaluation/train-LightGBM-gridSearchCV.py LightGBM gridSearch_withAllfeaturesLightGBM  datasets/processed_data/model_predictions/LightGBM/ datasets/processed_data/feature_importance/LightGBM/ trained_models/LightGBM/
 
 if __name__ == "__main__":
     warnings.filterwarnings("ignore")
@@ -89,7 +89,7 @@ if __name__ == "__main__":
         dev_date, test_date = train_test_split(test_date, train_size=0.5, shuffle=False)
 
         # convert timeseries to be used in supervise learning model    
-        X_test, y_test, indx_test = timeseries_to_supervise(test_data, window_size, target_price)  
+        X_test, y_test, indx_test = timeseries_to_supervise(dev_data, window_size, target_price)  
                 
         X_train, X_eval = train_test_split(X_train, train_size=0.7, shuffle=False)
         y_train, y_eval = train_test_split(y_train, train_size=0.7, shuffle=False)
@@ -99,14 +99,14 @@ if __name__ == "__main__":
         tscv = TimeSeriesSplit(n_splits=n_test_split)
         
         param_grid = {
-                'learning_rate': [0.1],
-                'n_estimators': [100],
-                'max_depth': [8],
-                'num_leaves': [7, 8, 9],
+                'learning_rate': [0.05, 0.01, 0.1],
+                'n_estimators': [20, 50, 100],
+                'max_depth': [8, 10, 15],
+                'num_leaves': [9],
                 'boosting': ['gbdt', 'dart'],
                 'min_data_in_leaf': [70],
-                'reg_alpha': [0.2, 0.25],
-                'reg_lambda': [0.2, 0.25],
+                'reg_alpha': [0.2],
+                'reg_lambda': [0.2],
                 'objective': ['regression'],
                 'early_stopping_rounds' : [10]
               }        
@@ -115,7 +115,7 @@ if __name__ == "__main__":
                           return_train_score=True, param_grid=param_grid)
         
         grid_search.fit(X_train, y_train, eval_set=[(X_eval, y_eval)], eval_metric="mape")
-        model_path = args.TRAINED_MODEL_PATH 
+        model_path = args.TRAINED_MODEL_PATH + args.MODEL_NAME + '/'
         joblib.dump(grid_search.best_estimator_,  model_path + ticker + '.pkl')
         
         print("model fitted")
@@ -123,8 +123,8 @@ if __name__ == "__main__":
         result_df.to_csv(args.MODEL_PREDICTIONS + ticker + '_result.csv', index=False)
         print('Saved test scores to ' + args.MODEL_PREDICTIONS)
       
-        path = args.TRAINED_MODEL_PATH + ticker + '.pkl'
-        trained_model = joblib.load(path)
+        # path = args.TRAINED_MODEL_PATH + ticker + '.pkl'
+        # trained_model = joblib.load(path)
         
         experiment_name = args.EXPERIMENT_NAME  # Replace with your desired experiment name
 
@@ -142,6 +142,7 @@ if __name__ == "__main__":
             
             # train the Random Forest model
             trained_model = grid_search.best_estimator_
+            trained_model = train_model(model, X_train, y_train)
 
             # evaluate the fitted model using mape and rmse metrics
             predictions_df, mape, rmse = evaluate_model(trained_model, window_size, dev_data, dev_date, X_test, y_test)          

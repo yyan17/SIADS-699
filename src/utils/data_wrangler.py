@@ -266,7 +266,7 @@ def create_all_features(data_paths: str, ticker: str, topic_id: int) -> tuple[pd
 
      # combine other index features/oli price, Rs rate, interest rate etc
     combined_df = combined_df.merge(index_features_df, on='date', how='left')
-    print("shape after combining features:", combined_df.shape)
+    print("shape after combining index featuress results:", combined_df.shape)
 
     # create the custom target price using ln(high/yesterday_close)
     combined_df = create_custom_target(combined_df)
@@ -280,8 +280,6 @@ def create_all_features(data_paths: str, ticker: str, topic_id: int) -> tuple[pd
     combined_df = combined_df.replace([np.inf, -np.inf], np.nan)
     combined_df = combined_df.fillna(method='ffill').fillna(method='bfill')
     combined_df = pd.concat([combined_date_df, combined_df], axis=1)
-    combined_df = combined_df.drop_duplicates(subset='date', keep='first')
-    print("final shape of combined features, duplicates dropped:", combined_df.shape)
     return(combined_df)
 
     
