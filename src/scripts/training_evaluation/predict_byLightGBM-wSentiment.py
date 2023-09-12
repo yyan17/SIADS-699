@@ -42,7 +42,7 @@ topn_feature_count = 44
 seed= 42
 
 # command to run the script
-# python src/scripts/training_evaluation/predict_byLightGBM-wSentiment.py LightGBM LightGBMwSentiment datasets/processed_data/feature_importance/LightGBM/ datasets/processed_data/model_predictions/LightGBM/wSentiment/ 
+# python src/scripts/training_evaluation/predict_byLightGBM-wSentiment.py Prophet ProphetwSentiment datasets/processed_data/feature_importance/LightGBM/ datasets/processed_data/model_predictions/Prophet/wSentiment/ 
 
 if __name__ == "__main__":
     warnings.filterwarnings("ignore")

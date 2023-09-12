@@ -49,7 +49,6 @@ def plot_prediction_range(df: pd.DataFrame, ticker: str) -> None:
         hovermode="x"
     )
     fig.update_layout(template="presentation")
-    fig.show()
     return(fig)
     
 def plot_predictions(df: pd.DataFrame, ticker: str) -> None:
@@ -77,5 +76,5 @@ def plot_predictions(df: pd.DataFrame, ticker: str) -> None:
         hovermode="x"
     )
     fig.update_layout(template="presentation")
-    fig.show()    
+#     fig.show()    
     return(fig)
