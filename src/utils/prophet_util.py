@@ -47,10 +47,6 @@ def evaluate_model(model, future: pd.DataFrame, eval_data: pd.DataFrame, eval_df
     # convert predictions to actual prices
     result_df = convert_predicitons_to_actual(result_df)
     
-    # rearrange the columns
-    prediction_cols = ['date', 'high', 'pred_high', 'pred_high_lower', 'pred_high_upper']
-    result_df = result_df[prediction_cols]
-    
     # compute regression metric - mape 
     mape = mean_absolute_percentage_error(result_df['high'], result_df['pred_high'])
 
@@ -89,7 +85,7 @@ def convert_predicitons_to_actual(result_df: pd.DataFrame) -> pd.DataFrame:
     """
     prediction_cols =  ['date','high','pred_high_lower','pred_high_upper','pred_high']
     
-    result_df['pred_high_lower'] = convert_custom_target_to_actual(result_df, 'yhat_lower')
-    result_df['pred_high_upper'] = convert_custom_target_to_actual(result_df, 'yhat_upper')
-    result_df['pred_high'] = convert_custom_target_to_actual(result_df, 'yhat')
+    result_df['pred_high_lower'] = convert_custom_target_to_actual(result_df, 'yhat_lower').round(3)
+    result_df['pred_high_upper'] = convert_custom_target_to_actual(result_df, 'yhat_upper').round(3)
+    result_df['pred_high'] = convert_custom_target_to_actual(result_df, 'yhat').round(3)
     return(result_df.loc[:, prediction_cols])
